@@ -2,16 +2,19 @@
 <html>
 <head>
 	<title>
+	Personalize People
 	</title>
 </head>
 <body>
+<canvas id="canvas"></canvas>
+<h1>Create a person!</h1>
 
 </body>
 <script type="text/javascript">
-	var canvas = canvasGA = document.getElementById("gameArea");
-canvasGA.addEventListener( 'click', processMouseInput);
+	var canvas = document.getElementById("canvas");
+canvas.addEventListener( 'click', processMouseInput);
 window.addEventListener('keydown', processKeyboardInput);
-var contextGA = canvasGA.getContext("2d");
+var contextCanvas = canvas.getContext("2d");
 
 </script>
 </html>
