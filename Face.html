@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<script src="Extra-Random.js"></script>
 	<title>
 	Personalize People
 	</title>
@@ -10,8 +11,8 @@
 <h1>Create a person!</h1>
 
 </body>
-<script type="text/javascript">
-	var canvas = document.getElementById("canvas");
+<script type="text/javascript" src="./Clothes.js">
+var canvas = document.getElementById("canvas");
 canvas.addEventListener( 'click', processMouseInput);
 window.addEventListener('keydown', processKeyboardInput);
 var contextCanvas = canvas.getContext("2d");
