@@ -7,15 +7,61 @@
 	</title>
 </head>
 <body>
-<canvas id="canvas"></canvas>
+<canvas id="canvas" height="500" width="750" style="border:1px solid #c3c3c3" = ></canvas>
 <h1>Create a person! This is an html file</h1>
 
 </body>
-<script type="text/javascript" src="./Clothes.js">
-var canvas = document.getElementById("canvas");
-canvas.addEventListener( 'click', processMouseInput);
-window.addEventListener('keydown', processKeyboardInput);
-var contextCanvas = canvas.getContext("2d");
 
+
+
+<script type="text/javascript">
+
+
+//later if want to link: src="./Clothes.js"
+var canvas = document.getElementById("canvas");
+//canvas.addEventListener( 'click', processMouseInput);
+//window.addEventListener('keydown', processKeyboardInput);
+var ctx = canvas.getContext("2d");
+
+function dftFace(){ //gray circle
+	ctx.fillStyle = "#d3d3d3";
+	ctx.beginPath();
+	ctx.arc(350, 100, 44, 0, 2*Math.PI);
+	ctx.closePath();
+	ctx.fill();
+	//if we want a border
+	//ctx.lineWidth = 2;
+	//ctx.stroke();
+	//ctx.fillStyle = "black";
+}
+dftFace();
+
+function neck(){ //all necks are same except for color
+	ctx.fillStyle = "#d3d3d3";
+	ctx.beginPath();
+	ctx.stroke();
+	ctx.fillRect(329.5, 130, 44, 30);//x, y, width , height
+
+}
+
+neck();
+
+function dftNose(){ //just a triangle
+	
+}
+
+function dftLArm(){
+
+}
+function dftRArm(){
+
+}
+function dftRLeg(){
+
+}
+function dftLLeg(){
+
+}
 </script>
+<script type="text/javascript" src = "./Clothes.js"></script>
 </html>
