@@ -37,10 +37,17 @@ ctx.stroke();
             ctx.fill(path);
         }
     }
-
 draw();
 
 
 //could draw many connecting circles with repeat for loop that adds an amount onto the coordinates
 //overlap shapes to avoid white areas
+
+//for a half circle just do pi instead of 2*Pi
+//line join to get the an arc?
+
+//draw images:
+//make an image variable
+//var img = document.getElementById("image");
+//ctx.drawiImage(img, 10, 10);
 
