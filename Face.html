@@ -17,9 +17,13 @@
 
 <script type="text/javascript">
 
+var canvas = document.getElementById("canvas");
+
 function showCoords(){
-	var x = event.clientX -8;
-	var y = event.clientY -8;//relative to the frame it's inside of
+	var x = event.clientX - canvas.offsetLeft;
+	var y = event.clientY - canvas.offsetTop;
+	//var x = event.clientX -8;
+	//var y = event.clientY -8;//relative to the frame it's inside of
 	var coords = "X coords: " + x + " , Y coords: " + y;
 	document.getElementById("coordinates").innerHTML = coords;
 }
@@ -57,19 +61,66 @@ neck();
 function dftNose(){ //just a triangle
 	ctx.fillStyle = "#d3d3d3";
 	var path =new Path2D();
-    path.moveTo(100,100);
-    path.lineTo(70,70);
-    path.lineTo(130,130);
+    path.moveTo(350,82);
+    path.lineTo(341,100);
+    path.lineTo(352, 100);
     ctx.stroke(path);
-    //ctx.lineWidth = 2;
-	//ctx.stroke();
-	//ctx.fillStyle = "black";
 
 }
 dftNose();
 
-function dftLArm(){
+function dftMouth(){
+	ctx.fillStyle = "d3d3d3";
+	var path =new Path2D();
+	//right side
+    path.moveTo(350,107.5);
+    path.lineTo(355,106);
+    path.lineTo(363,110);
+    //left side
+    path.moveTo(350,107.5);
+    path.lineTo(345, 106);
+    path.lineTo(337, 110);
+    //bottom left
+    path.moveTo(337, 110);
+    path.lineTo(344, 114);
+   
+       //bottom right
+    path.moveTo(363,110);
+    path.lineTo(356, 114);
+    //bottom
+    path.lineTo(344, 114);
+    ctx.stroke(path);
 
+
+
+}
+
+dftMouth();
+
+function closedLEye(){ 
+	ctx.fillStyle = "black";
+	ctx.beginPath();
+	ctx.arc(330, 77, 10, 45 *Math.PI/180, 135 * Math.PI/180);
+	ctx.stroke();
+
+}
+
+closedLEye();
+
+function closedREye(){ 
+	ctx.fillStyle = "black";
+	ctx.beginPath();
+	ctx.arc(370, 77, 10, 45*Math.PI/180, 135 * Math.PI/180);
+	ctx.stroke();
+}
+closedREye();
+
+function dftLArm(){
+	ctx.fillStyle = "red";
+	var path = new path;
+	path.moveTo(252, 172);
+	path.lineTo(264, 186);
+	path.lineTo(200,250);
 }
 function dftRArm(){
 
