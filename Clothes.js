@@ -168,11 +168,93 @@ function shoes1(){
 	ctx.fillStyle = "#0000FF";
 	ctx.fillRect(390,450,60,25);
 	ctx.fillRect(310,450,-60,25);
+
+	var path = new Path2D;
+	path.moveTo(310,475);
+	path.lineTo(310,480);
+	path.lineTo(290,480);
+	path.lineTo(290,475);
+	path.lineTo(280,480);
+	path.lineTo(250,480);
+	path.lineTo(250,475);
+
+	path.moveTo(390,475);
+	path.lineTo(390,480);
+	path.lineTo(410,480);
+	path.lineTo(410,475);
+	path.lineTo(420,480);
+	path.lineTo(450,480);
+	path.lineTo(450,475);
+	ctx.fill(path);
+	
+}
+//shoes1();
+
+function shoes2(){
+	ctx.fillStyle = "#0000FF";
+	ctx.fillRect(390,450,40,25);
+	ctx.fillRect(310,450,-40,25);
+
+
+	var path = new Path2D;
+	path.arc(430,465,15, 0, 2* Math.PI);
+	ctx.fill(path);
+
+	var path = new Path2D;
+	path.arc(267,465,15, 0, 2* Math.PI);
+
+	path.moveTo(310,475);
+	path.lineTo(310,480);
+	path.lineTo(290,480);
+	path.lineTo(290,475);
+	path.lineTo(280,480);
+	path.lineTo(265,480);
+	path.lineTo(265,475);
+
+	path.moveTo(390,475);
+	path.lineTo(390,480);
+	path.lineTo(410,480);
+	path.lineTo(410,475);
+	path.lineTo(420,480);
+	path.lineTo(435,480);
+	path.lineTo(435,475);
+	ctx.fill(path);
+	
+}
+shoes2();
+
+function boots(){
+	ctx.fillStyle = "#0000FF";
+	ctx.fillRect(390,450,70,30);
+	ctx.fillRect(310,450,-70,30);
+
+	var path = new Path2D;
+	path.moveTo(275,450);
+	path.lineTo(280,390);
+	path.lineTo(330,390);
+	path.lineTo(310,480);
+	path.lineTo(310,485);
+	path.lineTo(290,485);
+	path.lineTo(290,480);
+	path.lineTo(280,485);
+	path.lineTo(240,485);
+	path.lineTo(240,480);
+
+
+	path.moveTo(425,450);
+	path.lineTo(420,390);
+	path.lineTo(370,390);
+	path.lineTo(390,480);
+	path.lineTo(390,485);
+	path.lineTo(410,485);
+	path.lineTo(410,480);
+	path.lineTo(420,485);
+	path.lineTo(460,485);
+	path.lineTo(460,480);
+	ctx.fill(path);
 }
 
-shoes1();
-
-
+//boots();
 
 function proportions(){
 	ctx.fillStyle = "#FF5500";
