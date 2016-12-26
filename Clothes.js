@@ -256,21 +256,179 @@ function boots(){
 
 //boots();
 
-function proportions(){
-	ctx.fillStyle = "#FF5500";
+function glasses1(){
 	var path = new Path2D;
-	path.moveTo(200,125);
-	//shoulders top
+	path.arc(330,85,10,0,2*Math.PI);
+	path.moveTo(380,85);
+	path.arc(370,85,10,0,2*Math.PI);
 
-	path.lineTo(300,50);
-	//head top
-	path.lineTo(300,300);
-	//hip area, where pants begin
-	path.lineTo(200,475);
-	//top of shoe
+	path.moveTo(360,85);
+	path.lineTo(340,85);
 
+	path.moveTo(320,82);
+	path.lineTo(310,70);
+
+	path.moveTo(380,82);
+	path.lineTo(390,70);
+	ctx.stroke(path);
+
+}
+
+//glasses1();
+
+function glasses2(){
+	var path = new Path2D;
+	path.arc(330,80,15,0,1*Math.PI);
+	path.moveTo(385,80);
+	path.arc(370,80,15,0,1*Math.PI);
+
+	path.moveTo(309,70);
+	path.lineTo(315,80);
+	path.lineTo(385,80);
+	path.lineTo(391,70);
+
+	ctx.stroke(path);
+
+}
+
+//glasses2();
+
+function glasses3(){
+	var path = new Path2D;
+	//path.lineWidth(10);
+	//look up how to change line width, cause this doesn't work!!!
+	path.arc(330,80,15,0,1*Math.PI);
+	path.moveTo(385,80);
+	path.arc(370,80,15,0,1*Math.PI);
+
+	path.moveTo(309,70);
+	path.lineTo(315,80);
+	path.lineTo(385,80);
+	path.lineTo(391,70);
+
+	ctx.stroke(path);
+
+}
+
+//glasses3();
+
+function glasses4(){
+	var path = new Path2D;
+	path.arc(330,85,15,0,2*Math.PI);
+	path.moveTo(385,85);
+	path.arc(370,85,15,0,2*Math.PI);
+
+	path.moveTo(355,85);
+	path.lineTo(345,85);
+
+	path.moveTo(315,82);
+	path.lineTo(310,70);
+
+	path.moveTo(385,82);
+	path.lineTo(390,70);
+	ctx.stroke(path);
+
+}
+
+glasses4();
+
+function hp(){
+	var path = new Path2D;
+	path.moveTo(330,50);
+	path.lineTo(327,60);
+	path.lineTo(335,55);
+	path.lineTo(331,67);
+	ctx.stroke(path);
+
+}
+
+//hp();
+
+function hat1(){
+	var path = new Path2D;
+	path.arc(350,70,45,1*Math.PI,2*Math.PI);
+	path.lineTo(305,68);
+	path.lineTo(275,68);
+	path.lineTo(275,62);
+	path.lineTo(307,62)
 	ctx.fill(path);
 }
 
-//proportions();
+//hat1();
+
+//wand
+
+function hat2(){
+	var path = new Path2D;
+	path.arc(350,70,45,1*Math.PI,2*Math.PI);
+	ctx.fill(path); 
+
+	ctx.fillRect(305,60,90,10);
+	fillStyle = "#FFFFFF";
+	ctx.strokeRect(305,60,10,10);
+	ctx.strokeRect(315,60,10,10);
+	ctx.strokeRect(325,60,10,10);
+	ctx.strokeRect(335,60,10,10);
+	ctx.strokeRect(345,60,10,10);
+	ctx.strokeRect(355,60,10,10);
+	ctx.strokeRect(365,60,10,10);
+	ctx.strokeRect(375,60,10,10);
+	ctx.strokeRect(385,60,10,10);
+
+}
+
+//hat2();
+
+function hat3(){
+	ctx.strokeRect(285,60,130,10);
+	ctx.fillRect(285,60,130,10);
+
+	var path = new Path2D;
+	path.moveTo(305,60);
+	path.lineTo(320,35);
+	path.lineTo(380,35);
+	path.lineTo(395,60);
+	ctx.fill(path);
+}
+
+//hat3();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
