@@ -1,6 +1,7 @@
 var canvas = document.getElementById("canvas");
 var ctx = canvas.getContext("2d");
 
+
 function triangleshirt(){
 	ctx.fillStyle = "#D3D3D3";
 	//default color, apply later!
@@ -392,7 +393,6 @@ function hat3(){
 }
 
 //hat3();
-
 
 
 
