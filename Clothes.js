@@ -59,7 +59,7 @@ function shortsleeve(){
 	ctx.fill(path);
 }
 
-shortsleeve();
+//shortsleeve();
 
 function longsleeve(){
 	var path = new Path2D;
@@ -75,7 +75,7 @@ function longsleeve(){
 	ctx.fill(path);
 }
 
-//longsleeve();
+longsleeve();
 
 function pants1(){
 	ctx.fillStyle = "#FFFF00";
