@@ -27,7 +27,6 @@ function curvedshirt(){
 
 	var path=new Path2D();
 	path.arc(350,90,50,0.2*Math.PI,0.8*Math.PI);
-	path.lineWidth = 1;
 	path.lineTo(300,120);
 	path.lineTo(350,150);
 	path.lineTo(400,120);

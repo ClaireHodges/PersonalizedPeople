@@ -326,8 +326,59 @@ function background5(){
 	ctx.fill(path);
 }
 
-background5();
+//background5();
 
+function background6(){
+	ctx.fillStyle = "#46C7F2";
+	ctx.fillRect(0,0,750,200);
+	ctx.fillStyle = "#0AC927";
+	ctx.fillRect(0,200,750,300);
+
+	ctx.fillStyle = "#F4FA87";
+	var path = new Path2D;
+	path.arc(650,100,40,0,2*Math.PI);
+
+	path.moveTo(685,70);
+	path.lineTo(700,60);
+	path.lineTo(710,65);
+	path.lineTo(690,75);
+
+	path.moveTo(615,70);
+	path.lineTo(600,60);
+	path.lineTo(590,65);
+	path.lineTo(610,75);
+
+	path.moveTo(685,130);
+	path.lineTo(700,140);
+	path.lineTo(710,135);
+	path.lineTo(690,125);
+
+	path.moveTo(615,130);
+	path.lineTo(600,140);
+	path.lineTo(590,135);
+	path.lineTo(610,125);
+
+	ctx.fill(path);
+
+	ctx.fillRect(645,10,10,40);
+	ctx.fillRect(645,150,10,40);
+	ctx.fillRect(560,100,40,10);
+	ctx.fillRect(700,100,40,10);
+
+	ctx.fillStyle = "#0000CC";
+	var path = new Path2D;
+	path.arc(422,170,150,0.25*Math.PI,0.85*Math.PI);
+	path.arc(225,280,75,1.8*Math.PI,0.7*Math.PI,true);
+	path.arc(170,370,30,1.65*Math.PI,0.02*Math.PI);
+	/**/path.arc(250,380,50,1.05*Math.PI,0.25*Math.PI,true);
+	path.arc(323,450,50,1.3*Math.PI,1.76*Math.PI);
+	path.arc(423,360,84,0.7*Math.PI,0.16*Math.PI,true);
+	path.arc(522,417,30,1.2*Math.PI,1.7*Math.PI);
+	path.arc(580,330,75,0.6*Math.PI,1.25*Math.PI,true);
+	ctx.fill(path);
+
+}
+background6();
 
 
 
