@@ -21,4 +21,4 @@ function background1(){
 	var img = document.getElementById("cloud");
 	ctx.drawImage(img,60,60,180,140);
 }
-background1()
+//background1()

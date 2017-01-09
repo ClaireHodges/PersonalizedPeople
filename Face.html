@@ -54,7 +54,7 @@ function neck(){ //all necks are same except for color
 	ctx.fillStyle = "#d3d3d3";
 	ctx.beginPath();
 	ctx.stroke();
-	ctx.fillRect(329.5, 115, 44, 30);//x, y, width , height
+	ctx.fillRect(329.5, 115, 44, 35);//x, y, width , height
 
 }
 
@@ -117,22 +117,55 @@ function closedREye(){
 }
 closedREye();
 
-function dftLArm(){
-	ctx.fillStyle = "red";
-	var path = new path;
-	path.moveTo(252, 172);
-	path.lineTo(264, 186);
-	path.lineTo(200,250);
+function LArm(){
+	ctx.fillStyle = "#d3d3d3";
+	var path = new Path2D;
+	path.moveTo(289,141);
+	path.lineTo(350,143);
+	path.lineTo(175,250); //ll
+	path.lineTo(157,227);
+	ctx.fill(path);
 }
-function dftRArm(){
 
-}
-function dftRLeg(){
+LArm();
 
+
+function RArm(){
+	var path = new Path2D;
+	ctx.fillStyle = "#d3d3d3";
+
+	path.moveTo(410,141);
+	path.lineTo(350,145);
+	path.lineTo(525,250); //lr
+	path.lineTo(539,227); //t
+	ctx.fill(path);
+	
 }
+
+RArm();
+
 function dftLLeg(){
 
 }
+function RHand(){
+	ctx.fillStyle = "#d3d3d3";
+	ctx.beginPath();
+	ctx.arc(533, 238.5, 18, 0, 2*Math.PI);
+	ctx.closePath();
+	ctx.fill();
+}
+RHand();
+
+function LHand(){
+	ctx.fillStyle = "#d3d3d3";
+	ctx.beginPath();
+	ctx.arc(164, 238.5, 18, 0, 2*Math.PI);
+	ctx.closePath();
+	ctx.fill();
+}
+LHand();
+
+
 </script>
 <script type="text/javascript" src = "./Clothes.js"></script>
 </html>
