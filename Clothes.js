@@ -18,7 +18,7 @@ function triangleshirt(){
 	ctx.fill(path);
 }
 
-//triangleshirt();
+triangleshirt();
 
 function curvedshirt(){
 	ctx.fillStyle = "#D3D3D3";
@@ -59,7 +59,7 @@ function shortsleeve(){
 	ctx.fill(path);
 }
 
-//shortsleeve();
+shortsleeve();
 
 function longsleeve(){
 	var path = new Path2D;
@@ -188,7 +188,7 @@ function shoes1(){
 	ctx.fill(path);
 	
 }
-//shoes1();
+shoes1();
 
 function shoes2(){
 	ctx.fillStyle = "#0000FF";
@@ -254,7 +254,7 @@ function boots(){
 	ctx.fill(path);
 }
 
-boots();
+//boots();
 
 function glasses1(){
 	var path = new Path2D;
@@ -391,9 +391,17 @@ function hat3(){
 	ctx.fill(path);
 }
 
-//hat3();
+hat3();
 
+function bracelet1(){
+	fillStyle = "#FFFFFF"
+	var path = new Path2D;
+	path.moveTo(510,240);
+	path.lineTo(520,220);
+	ctx.stroke(path);
+}
 
+bracelet1();
 
 
 
