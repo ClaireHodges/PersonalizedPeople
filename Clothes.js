@@ -60,7 +60,7 @@ function curvedshirt(){
 
 }
 
-//curvedshirt();
+curvedshirt();
 
 function shortsleeve(){
 	var path = new Path2D;
