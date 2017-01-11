@@ -328,7 +328,7 @@ function background5(){
 	ctx.fill(path);
 }
 
-//background5();
+background5();
 
 function background6(){
 	ctx.fillStyle = "#46C7F2";
@@ -380,30 +380,7 @@ function background6(){
 	ctx.fill(path);
 
 }
-background6();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//background6();
 
 
 
