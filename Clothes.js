@@ -2,6 +2,23 @@ var canvas = document.getElementById("canvas");
 var ctx = canvas.getContext("2d");
 
 
+function legs(){
+	ctx.fillStyle = "#FFFF00";
+	var path = new Path2D;
+	path.moveTo(300,300);
+
+	path.lineTo(275,450);
+	path.lineTo(310,450);
+	path.lineTo(350,330);
+
+	path.lineTo(390,450);
+	path.lineTo(425,450);
+	path.lineTo(400,300);
+	ctx.fill(path);
+}
+
+legs();
+
 function triangleshirt(){
 	ctx.fillStyle = "#D3D3D3";
 	//default color, apply later!
@@ -295,17 +312,16 @@ function glasses2(){
 
 function glasses3(){
 	var path = new Path2D;
-	//path.lineWidth(10);
-	//look up how to change line width, cause this doesn't work!!!
 	path.arc(330,80,15,0,1*Math.PI);
 	path.moveTo(385,80);
 	path.arc(370,80,15,0,1*Math.PI);
+	ctx.fill(path);
 
+	var path = new Path2D;
 	path.moveTo(309,70);
 	path.lineTo(315,80);
 	path.lineTo(385,80);
 	path.lineTo(391,70);
-
 	ctx.stroke(path);
 
 }
@@ -330,7 +346,7 @@ function glasses4(){
 
 }
 
-glasses4();
+//glasses4();
 
 function hp(){
 	var path = new Path2D;
@@ -391,7 +407,7 @@ function hat3(){
 	ctx.fill(path);
 }
 
-hat3();
+//hat3();
 
 function bracelet1(){
 	fillStyle = "#FFFFFF"
@@ -401,7 +417,7 @@ function bracelet1(){
 	ctx.stroke(path);
 }
 
-bracelet1();
+//bracelet1();
 
 
 
