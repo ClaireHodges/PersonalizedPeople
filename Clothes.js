@@ -43,7 +43,7 @@ function curvedshirt(){
 
 }
 
-//curvedshirt();
+curvedshirt();
 
 function shortsleeve(){
 	var path = new Path2D;
@@ -59,7 +59,7 @@ function shortsleeve(){
 	ctx.fill(path);
 }
 
-//shortsleeve();
+shortsleeve();
 
 function longsleeve(){
 	var path = new Path2D;
