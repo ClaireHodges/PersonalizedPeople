@@ -391,7 +391,7 @@ function hat3(){
 	ctx.fill(path);
 }
 
-hat3();
+//hat3();
 
 function bracelet1(){
 	fillStyle = "#FFFFFF"

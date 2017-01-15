@@ -153,6 +153,10 @@ function sHair(){
 }
 //sHair();
 function mHair(){
+	ctx.fillStyle = "black";
+	ctx.beginPath();
+	ctx.arc(370, 77, 10, 45*Math.PI/180, 135 * Math.PI/180);
+	ctx.stroke();
 
 }
 function lHair(){
@@ -209,4 +213,6 @@ function spikeHair(){
 
 }
 
-spikeHair();
+//spikeHair();
+
+
