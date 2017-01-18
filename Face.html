@@ -4,7 +4,24 @@
 <style>
 #canvas{
 	float:left;
+	width:750px;
 }
+
+#div{
+	float:right;
+	width:200px;
+	border:3px solid #FF0000;
+	margin:5px;
+	padding:5px;
+}
+
+#instructions{
+	float:left;
+	width:740px;
+	height:1000px;
+	border:3px solid #000000;
+}
+
 </style>
 <script src="Extra-Random.js"></script>
 	<title>
@@ -13,11 +30,13 @@
 </head>
 <body>
 <canvas  onclick = "showCoords(event)" id="canvas" height="500" width="750" style="border:1px solid #c3c3c3" = ></canvas>
-<h1>Create a person! This is an html file</h1>
 <p id ="coordinates"></p>
 
+
+
+<div id="div">
 <h2>Hair:</h2>
-<form action="">
+<form action="" id="buttons">
   <input type="radio" name="hair" value="short"> Short<br>
   <input type="radio" name="hair" value="medium"> Medium<br>
   <input type="radio" name="hair" value="long"> Long<br>
@@ -25,40 +44,52 @@
   <input type="radio" name="hair" value="none"> None<br>
 </form>
 
+<br>
+
 <h2>Hats:</h2>
-<form action="">
+<form action="" id="buttons">
   <input type="radio" name="hat" value="shoes1"> Square shoes<br>
   <input type="radio" name="hat" value="shoes2"> Round shoes<br>
   <input type="radio" name="hat" value="boots"> Boots
 </form>
 
+<br>
+
 <h2>Scar:</h2>
-<form action="">
+<form action="" id="buttons">
   <input type="radio" name="scar" value="hp"> Harry Potter Lightning Bolt<br>
   <input type="radio" name="scar" value="none"> None
 </form>
 
+<br>
+
 <h2>Eyes:</h2>
-<form action="">
+<form action="" id="buttons">
   <input type="radio" name="eyes" value="closed"> Closed<br>
   <input type="radio" name="eyes" value="open"> Open<br>
   <input type="radio" name="eyes" value="closedlash"> Closed with eyelashes<br>
   <input type="radio" name="eyes" value="openlash"> Open with eyelashes
 </form>
 
+<br>
+
 <h2>Glasses:</h2>
-<form action="">
+<form action="" id="buttons">
   <input type="radio" name="shoes" value="g1"> Small circles<br>
   <input type="radio" name="shoes" value="g2"> Cool<br>
   <input type="radio" name="shoes" value="g3"> Sunglasses<br>
   <input type="radio" name="shoes" value="g4"> Big circles
 </form>
 
+<br>
+
 <h2>Nose:</h2>
-<form action="">
+<form action="" id="buttons">
   <input type="radio" name="nose" value="pointy"> Pointy<br>
   <input type="radio" name="nose" value="round"> Round
 </form>
+
+<br>
 
 <!--<h2>Mouth:</h2>
 <form action="">
@@ -69,15 +100,17 @@
 </form> -->
 
 <h2>Shirts:</h2>
-<form action="">
+<form action="" id="buttons">
   <input type="radio" name="shirt" value="curvedshort"> Curved neckline, Short sleeves<br>
   <input type="radio" name="shirt" value="curvedlong"> Curved neckline, Long sleeves<br>
   <input type="radio" name="shirt" value="trishort"> Triangular neckline, Short sleeves<br>
   <input type="radio" name="shirt" value="trilong"> Triangular neckline, Long sleeves
 </form>
 
+<br>
+
 <h2>Bottoms:</h2>
-<form action="">
+<form action="" id="buttons">
   <input type="radio" name="bottoms" value="pants"> Pants<br>
   <input type="radio" name="bottoms" value="shorts1"> Short shorts<br>
   <input type="radio" name="bottoms" value="shorts2"> Knee-length shorts<br>
@@ -86,15 +119,19 @@
   <input type="radio" name="bottoms" value="skirt3"> Long skirt
 </form>
 
+<br>
+
 <h2>Shoes:</h2>
-<form action="">
+<form action="" id="buttons">
   <input type="radio" name="shoes" value="shoes1"> Square shoes<br>
   <input type="radio" name="shoes" value="shoes2"> Round shoes<br>
   <input type="radio" name="shoes" value="boots"> Boots
 </form>
 
+<br>
+
 <h2>Background:</h2>
-<form action="">
+<form action="" id="buttons">
   <input type="radio" name="background" value="b1"> Blue skies<br>
   <input type="radio" name="background" value="b2"> Sun!<br>
   <input type="radio" name="background" value="b3"> Lightning<br>
@@ -103,6 +140,11 @@
   <input type="radio" name="background" value="b6"> Lake<br>
   <input type="radio" name="background" value="none"> None<br>
 </form>
+
+
+</div>
+
+<div id="instructions"></div>
 
 </body>
 
