@@ -1,5 +1,9 @@
 var canvas = document.getElementById("canvas");
 
+var skinColor = "red";
+var hairColor = "purple"; //will change these to take user input soon
+var accentSkin = "white";
+
 function showCoords(){
 	var x = event.clientX - canvas.offsetLeft;
 	var y = event.clientY - canvas.offsetTop;
@@ -17,7 +21,7 @@ var canvas = document.getElementById("canvas");
 var ctx = canvas.getContext("2d");
 
 function dftFace(){ //gray circle
-	ctx.fillStyle = "#d3d3d3";
+	ctx.fillStyle = skinColor;
 	ctx.beginPath();
 	ctx.arc(350, 85, 44, 0, 2*Math.PI);
 	ctx.closePath();
@@ -30,7 +34,7 @@ function dftFace(){ //gray circle
 dftFace();
 
 function neck(){ //all necks are same except for color
-	ctx.fillStyle = "#d3d3d3";
+	ctx.fillStyle = skinColor;
 	ctx.beginPath();
 	ctx.stroke();
 	ctx.fillRect(329.5, 115, 44, 35);//x, y, width , height
@@ -40,7 +44,7 @@ function neck(){ //all necks are same except for color
 neck();
 
 function dftNose(){ //just a triangle
-	ctx.fillStyle = "#d3d3d3";
+	ctx.fillStyle = accentSkin;
 	var path =new Path2D();
     path.moveTo(350,82);
     path.lineTo(341,100);
@@ -50,8 +54,18 @@ function dftNose(){ //just a triangle
 }
 dftNose();
 
+function roundNose(){
+	ctx.fillStyle = accentSkin;
+	ctx.beginPath();
+	ctx.arc(350, 88, 7, 45*Math.PI/180, 135 * Math.PI/180);
+	ctx.stroke();
+
+}
+
+//roundNose();
+
 function dftMouth(){
-	ctx.fillStyle = "d3d3d3";
+	ctx.fillStyle = accentSkin;
 	var path =new Path2D();
 	//right side
     path.moveTo(350,107.5);
@@ -79,7 +93,7 @@ function dftMouth(){
 dftMouth();
 
 function closedLEye(){ 
-	ctx.fillStyle = "black";
+	ctx.fillStyle = accentSkin;
 	ctx.beginPath();
 	ctx.arc(330, 77, 10, 45 *Math.PI/180, 135 * Math.PI/180);
 	ctx.stroke();
@@ -89,15 +103,93 @@ function closedLEye(){
 closedLEye();
 
 function closedREye(){ 
-	ctx.fillStyle = "black";
+	ctx.fillStyle = accentSkin;
 	ctx.beginPath();
 	ctx.arc(370, 77, 10, 45*Math.PI/180, 135 * Math.PI/180);
 	ctx.stroke();
 }
 closedREye();
 
+function clREyelash(){
+	ctx.fillStyle = accentSkin;
+	var path = new Path2D();
+	 path.moveTo(324,84);
+	 path.lineTo(321,87);
+
+	path.moveTo(327.25,86);
+	path.lineTo(325, 89); 
+
+	path.moveTo(330.5, 86);//the total length of each eyelash is 4.24
+	path.lineTo(330.5, 90);
+
+	path.moveTo(333.75,86);
+	path.lineTo(335.75, 89);
+	
+	path.moveTo(337,84);
+	path.lineTo(340, 87);
+
+	ctx.stroke(path);
+}
+clREyelash();
+function clLEyelash(){
+	ctx.fillStyle = accentSkin;
+	var path = new Path2D();
+	path.moveTo(377,84);
+	path.lineTo(380,87);
+
+	path.moveTo(373.5, 86); 
+	path.lineTo(375.5, 89);
+
+	path.moveTo(370, 86);
+	path.lineTo(370, 90);
+
+	path.moveTo(366.5, 86);
+	path.lineTo(364.5, 89);
+	
+	path.moveTo(363, 84);
+	path.lineTo(360,87);
+	ctx.stroke(path);
+}
+clLEyelash();
+
+// function oREyelash(){
+// 	ctx.fillStyle = accentSkin;
+// 	var path = new Path2D();
+// 	path.moveTo();
+// 	path.lineTo();
+
+// 	path.moveTo();
+// 	path.lineTo();
+
+// 	path.moveTo();
+// 	path.lineTo();
+
+// 	path.moveTo();
+// 	path.lineTo();
+	
+// 	path.moveTo();
+// 	path.lineTo();
+// }
+// function oLEyelash(){
+// 	ctx.fillStyle = accentSkin;
+// 	var path = new Path2D();
+// 	path.moveTo();
+// 	path.lineTo();
+
+// 	path.moveTo();
+// 	path.lineTo();
+
+// 	path.moveTo();
+// 	path.lineTo();
+
+// 	path.moveTo();
+// 	path.lineTo();
+	
+// 	path.moveTo();
+// 	path.lineTo();
+// }
 function LArm(){
-	ctx.fillStyle = "#d3d3d3";
+	ctx.fillStyle = skinColor;
 	var path = new Path2D;
 	path.moveTo(289,141);
 	path.lineTo(350,143);
@@ -111,7 +203,7 @@ LArm();
 
 function RArm(){
 	var path = new Path2D;
-	ctx.fillStyle = "#d3d3d3";
+	ctx.fillStyle = skinColor;
 
 	path.moveTo(410,141);
 	path.lineTo(350,145);
@@ -127,7 +219,7 @@ function dftLLeg(){
 
 }
 function RHand(){
-	ctx.fillStyle = "#d3d3d3";
+	ctx.fillStyle = skinColor;
 	ctx.beginPath();
 	ctx.arc(533, 238.5, 18, 0, 2*Math.PI);
 	ctx.closePath();
@@ -136,7 +228,7 @@ function RHand(){
 RHand();
 
 function LHand(){
-	ctx.fillStyle = "#d3d3d3";
+	ctx.fillStyle = skinColor;
 	ctx.beginPath();
 	ctx.arc(164, 238.5, 18, 0, 2*Math.PI);
 	ctx.closePath();
@@ -146,14 +238,27 @@ LHand();
 
 function sHair(){
 	var path = new Path2D();
-	ctx.fillStyle = "black";
-	path.moveTo(330, 52);
-	path.lineTo(370, 52);
+	ctx.fillStyle = hairColor;
+
+	//ctx.beginPath();
+	//ctx.arc(350, 85, 44, 0, 2*Math.PI/1.4, true);
+	//ctx.closePath();
+	//ctx.stroke();
+	ctx.beginPath();
+	ctx.arc(350, 85, 44, 180, 2 * Math.PI);
+	ctx.closePath();
+	ctx.stroke();
+	//if we want a border
+	//ctx.lineWidth = 2;
+	//ctx.stroke();
+	//ctx.fillStyle = "black";
+	//350,85
+
 	ctx.stroke(path);
 }
-//sHair();
+sHair();
 function mHair(){
-	ctx.fillStyle = "black";
+	ctx.fillStyle = hairColor;
 	ctx.beginPath();
 	ctx.arc(370, 77, 10, 45*Math.PI/180, 135 * Math.PI/180);
 	ctx.stroke();
@@ -163,7 +268,7 @@ function lHair(){
 
 }
 function spikeHair(){
-	ctx.fillStyle = "black"; //insert variable here
+	ctx.fillStyle = hairColor; 
 	var path = new Path2D();
 	path.moveTo(332, 51);
 	path.lineTo(327, 42);
@@ -206,6 +311,18 @@ function spikeHair(){
 
 	path.moveTo(333, 57);
 	path.lineTo(330, 52);
+
+	path.moveTo(381, 67);
+	path.lineTo(388, 61);
+
+	path.moveTo(338, 44);
+	path.lineTo(334, 36);
+
+	path.moveTo(317, 65);
+	path.lineTo(309, 60);
+
+	path.moveTo(365, 45);
+	path.lineTo(370, 37);
 
 	path.moveTo(370, 56);
 	path.lineTo(372, 50);
