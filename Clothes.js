@@ -1,6 +1,7 @@
 var canvas = document.getElementById("canvas");
 var ctx = canvas.getContext("2d");
 
+var hairColor = "black";
 
 function legs(){
 	ctx.fillStyle = "#FFFF00";
@@ -418,6 +419,174 @@ function bracelet1(){
 }
 
 //bracelet1();
+
+function sHair(){
+	var path = new Path2D();
+	ctx.fillStyle = hairColor;
+
+	ctx.beginPath();
+	ctx.arc(350, 85, 44, 0, 280*Math.PI/180, true);
+	ctx.closePath(); //10, 45 *Math.PI/180, 135 * Math.PI/180);
+	ctx.fill();
+
+	ctx.beginPath();
+	ctx.arc(350, 85, 44, 210*Math.PI/180, 330* Math.PI/180);
+	ctx.closePath();
+	ctx.fill();
+
+	ctx.beginPath();
+	ctx.arc(350, 85, 44, 180* Math.PI/180, 260* Math.PI/180);
+	ctx.closePath();
+	ctx.fill();
+	//if we want a border
+	//ctx.lineWidth = 2;
+	//ctx.stroke();
+	//ctx.fillStyle = "black";
+	//350,85
+}
+//sHair();
+function mHair(){
+	ctx.fillStyle = hairColor;
+	ctx.beginPath();
+	ctx.arc(350, 85, 50, 0, 2*Math.PI/1.4, true);
+	ctx.closePath(); //10, 45 *Math.PI/180, 135 * Math.PI/180);
+	ctx.fill(path);
+
+	ctx.beginPath();
+	ctx.arc(350, 85, 50, 180* Math.PI/180, 310* Math.PI/180);
+	ctx.closePath();
+	ctx.fill(path);
+
+	//left side
+	var path = new Path2D();
+	ctx.beginPath();
+	ctx.arc(350, 85, 45, 119*Math.PI/180, 185*Math.PI/180);
+	ctx.stroke();
+	ctx.moveTo(300, 84);
+	path.moveTo(300, 84);
+	path.lineTo(300, 135);
+	path.moveTo(329, 124);
+	path.lineTo(329, 135);
+	path.lineTo(300, 135);
+
+
+	//right side
+	ctx.beginPath();
+	ctx.arc(350, 85, 45, 355*Math.PI/180, 59*Math.PI/180);
+	ctx.stroke();
+	path.moveTo(400, 84);
+	path.lineTo(400, 135);
+	path.moveTo(373, 124);
+	path.lineTo(373, 135);
+	path.lineTo(400,135);
+
+	//to fill in
+	ctx.stroke(path);
+}
+//mHair();
+function lHair(){
+	ctx.fillStyle = hairColor;
+	ctx.beginPath();
+	ctx.arc(350, 85, 50, 0, 2*Math.PI/1.4, true);
+	ctx.closePath(); //10, 45 *Math.PI/180, 135 * Math.PI/180);
+	ctx.fill(path);
+
+	ctx.beginPath();
+	ctx.arc(350, 85, 50, 180* Math.PI/180, 310* Math.PI/180);
+	ctx.closePath();
+	ctx.fill(path);
+
+	//left side
+	var path = new Path2D();
+	path.moveTo(300, 84);
+	path.lineTo(300, 185);
+	path.moveTo(329, 124);
+	path.lineTo(329, 185);
+	path.lineTo(300, 185);
+	path.moveTo(300, 120);
+	//to fill in the botton part
+	path.lineTo(300, 185);
+	path.lineTo(329, 185);
+	path.lineTo(329, 124);
+	ctx.fill(path);
+
+	//right side
+	path.moveTo(400, 84);
+	path.lineTo(400, 185);
+	path.moveTo(373, 124);
+	path.lineTo(373, 185);
+	path.lineTo(400,185);
+
+	//to fill in
+	ctx.stroke(path);
+}
+
+lHair();
+function baldoHair(){
+	ctx.fillStyle = hairColor; 
+	var path = new Path2D();
+	path.moveTo(332, 51);
+	path.lineTo(327, 42);
+
+	path.moveTo(359,50);
+	path.lineTo(364,41);
+
+	path.moveTo(376, 51);
+	path.lineTo(381, 42);
+
+	path.moveTo(324, 60);
+	path.lineTo(314, 49);
+
+	path.moveTo(346, 44);
+	path.lineTo(345, 35);
+
+	path.moveTo(379, 58);
+	path.lineTo(384, 53);
+
+	path.moveTo(348, 51);
+	path.lineTo(348, 43);
+
+	path.moveTo(340, 53);
+	path.lineTo(339,45);
+
+	path.moveTo(362,55);
+	path.lineTo(370,46);
+
+	path.moveTo(317,60);
+	path.lineTo(310,55);
+
+	path.moveTo(383,61);
+	path.lineTo(390,55);
+
+	path.moveTo(354,53);
+	path.lineTo(355,41);
+
+	path.moveTo(326,50);
+	path.lineTo(321, 44);
+
+	path.moveTo(333, 57);
+	path.lineTo(330, 52);
+
+	path.moveTo(381, 67);
+	path.lineTo(388, 61);
+
+	path.moveTo(338, 44);
+	path.lineTo(334, 36);
+
+	path.moveTo(317, 65);
+	path.lineTo(309, 60);
+
+	path.moveTo(365, 45);
+	path.lineTo(370, 37);
+
+	path.moveTo(370, 56);
+	path.lineTo(372, 50);
+	ctx.stroke(path);
+
+}
+
+//baldoHair();
+
 
 
 

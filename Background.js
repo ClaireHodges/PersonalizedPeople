@@ -328,7 +328,7 @@ function background5(){
 	ctx.fill(path);
 }
 
-background5();
+//background5();
 
 function background6(){
 	ctx.fillStyle = "#46C7F2";
@@ -380,8 +380,22 @@ function background6(){
 	ctx.fill(path);
 
 }
-//background6();
+background6();
 
+//the hair that goes behind the head for filling purposes only
+var hairColor = "black";
+function hairBehind(){
+	ctx.fillStyle = hairColor;
+	var path = new Path2D();
+	path.moveTo(300, 84);
+	path.lineTo(305, 82);
+	path.lineTo(394, 80);
+	path.lineTo(400, 84);
+	path.lineTo(400, 124);
+	path.lineTo(300, 124);
+	ctx.fill(path);
+}
+hairBehind();
 
 
 

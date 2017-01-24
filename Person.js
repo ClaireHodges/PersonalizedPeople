@@ -1,7 +1,7 @@
 var canvas = document.getElementById("canvas");
 
 var skinColor = "red";
-var hairColor = "purple"; //will change these to take user input soon
+var hairColor = "black"; //will change these to take user input soon
 var accentSkin = "white";
 
 function showCoords(){
@@ -109,6 +109,32 @@ function closedREye(){
 	ctx.stroke();
 }
 closedREye();
+
+function openREye(){
+	ctx.fillStyle = accentSkin;
+	//arcs
+	ctx.beginPath();
+	ctx.arc(370, 77, 10, 45*Math.PI/180, 135 * Math.PI/180);
+	ctx.stroke();
+	ctx.beginPath();
+	ctx.arc(370, 87, 10, 225*Math.PI/180, 315*Math.PI/180);
+	ctx.stroke();
+	//ends
+	var path = new Path2D();
+	path.moveTo(377, 79);
+	path.lineTo(379, 82);
+	path.moveTo(377, 84);
+	path.lineTo(379, 82);
+	ctx.stroke(path);
+
+	//circles
+	ctx.beginPath();
+	ctx.arc(371, 80, 3, 0, Math.PI/2);
+	ctx.stroke();
+
+
+}
+//openREye();
 
 function clREyelash(){
 	ctx.fillStyle = accentSkin;
@@ -236,100 +262,18 @@ function LHand(){
 }
 LHand();
 
-function sHair(){
-	var path = new Path2D();
-	ctx.fillStyle = hairColor;
-
-	//ctx.beginPath();
-	//ctx.arc(350, 85, 44, 0, 2*Math.PI/1.4, true);
-	//ctx.closePath();
-	//ctx.stroke();
-	ctx.beginPath();
-	ctx.arc(350, 85, 44, 180, 2 * Math.PI);
-	ctx.closePath();
-	ctx.stroke();
-	//if we want a border
-	//ctx.lineWidth = 2;
-	//ctx.stroke();
-	//ctx.fillStyle = "black";
-	//350,85
-
-	ctx.stroke(path);
-}
-sHair();
-function mHair(){
-	ctx.fillStyle = hairColor;
-	ctx.beginPath();
-	ctx.arc(370, 77, 10, 45*Math.PI/180, 135 * Math.PI/180);
-	ctx.stroke();
-
-}
-function lHair(){
-
-}
-function spikeHair(){
-	ctx.fillStyle = hairColor; 
-	var path = new Path2D();
-	path.moveTo(332, 51);
-	path.lineTo(327, 42);
-
-	path.moveTo(359,50);
-	path.lineTo(364,41);
-
-	path.moveTo(376, 51);
-	path.lineTo(381, 42);
-
-	path.moveTo(324, 60);
-	path.lineTo(314, 49);
-
-	path.moveTo(346, 44);
-	path.lineTo(345, 35);
-
-	path.moveTo(379, 58);
-	path.lineTo(384, 53);
-
-	path.moveTo(348, 51);
-	path.lineTo(348, 43);
-
-	path.moveTo(340, 53);
-	path.lineTo(339,45);
-
-	path.moveTo(362,55);
-	path.lineTo(370,46);
-
-	path.moveTo(317,60);
-	path.lineTo(310,55);
-
-	path.moveTo(383,61);
-	path.lineTo(390,55);
-
-	path.moveTo(354,53);
-	path.lineTo(355,41);
-
-	path.moveTo(326,50);
-	path.lineTo(321, 44);
-
-	path.moveTo(333, 57);
-	path.lineTo(330, 52);
-
-	path.moveTo(381, 67);
-	path.lineTo(388, 61);
-
-	path.moveTo(338, 44);
-	path.lineTo(334, 36);
-
-	path.moveTo(317, 65);
-	path.lineTo(309, 60);
-
-	path.moveTo(365, 45);
-	path.lineTo(370, 37);
-
-	path.moveTo(370, 56);
-	path.lineTo(372, 50);
-	ctx.stroke(path);
-
-}
-
-//spikeHair();
+//the hair that goes behind the head for filling purposes only
+// function hairBehind(){
+// 	ctx.fillStyle = hairColor;
+// 	var path = new Path2D();
+// 	path.moveTo(300, 84);
+// 	path.lineTo(305, 82);
+// 	path.lineTo(395, 82);
+// 	path.lineTo(400, 84);
+// 	path.lineTo(400, 120);
+// 	path.lineTo(300, 120);
+// 	ctx.fill(path);
+// }
+// hairBehind();
 
 
