@@ -160,7 +160,7 @@ function background2(){
 
 }
 
-//background2();
+background2();
 
 function background3(){
 	ctx.fillStyle = "#E3E1D8";
@@ -328,7 +328,7 @@ function background5(){
 	ctx.fill(path);
 }
 
-background5();
+//background5();
 
 function background6(){
 	ctx.fillStyle = "#46C7F2";
@@ -383,10 +383,12 @@ function background6(){
 //background6();
 
 
+function none(){
+
+}
 
 
-
-
+none();
 
 
 

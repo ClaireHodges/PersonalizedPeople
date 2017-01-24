@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
+<!--
+COLORS
+Red- #FF0000
+Blue-#0033CC
+Yellow-#FFFF00
+Green-#00FF00
+Pink-#FF6699
+Purple-#8F00B3
+Orange-#FF9933
+ --> 
 <style>
 #canvas{
 	float:left;
@@ -28,12 +38,29 @@
 	text-align:center;
 }
 
+#button{
+	background-color: #000090;
+    border: none;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+  	width:210px;
+  	float:right;
+	width:210px;
+	border:1px solid #000099;
+	margin:5px;
+	padding:5px;
+}
+
 h2{
 	text-decoration:underline;
 }
 
 </style>
 <script src="Extra-Random.js"></script>
+<script src="Interaction.js"></script>
 	<title>
 	Personalize People
 	</title>
@@ -43,16 +70,16 @@ h2{
 <canvas  onclick = "showCoords(event)" id="canvas" height="500" width="750" style="border:1px solid #c3c3c3" = ></canvas>
 <p id ="coordinates"></p>
 
-
+<button onclick="check()" id="button">Update Person</button>
 
 <div id="div">
 <h2>Hair:</h2>
 <form action="" id="buttons">
-  <input type="radio" name="hair" value="short"> Short<br>
-  <input type="radio" name="hair" value="medium"> Medium<br>
-  <input type="radio" name="hair" value="long"> Long<br>
-  <input type="radio" name="hair" value="spikey"> Spikey<br>
-  <input type="radio" name="hair" value="none"> None<br>
+  <input type="radio" name="hair" id="h1" value="short"> Short<br>
+  <input type="radio" name="hair" id="h2" value="medium"> Medium<br>
+  <input type="radio" name="hair" id="h3" value="long"> Long<br>
+  <input type="radio" name="hair" id="h4" value="spikey"> Spikey<br>
+  <input type="radio" name="hair" id="h5" value="none"> None<br>
 </form>
 
 <br>
@@ -142,14 +169,14 @@ h2{
 <br>
 
 <h2>Background:</h2>
-<form action="" id="buttons">
-  <input type="radio" name="background" value="b1"> Blue skies<br>
-  <input type="radio" name="background" value="b2"> Sun!<br>
-  <input type="radio" name="background" value="b3"> Lightning<br>
-  <input type="radio" name="background" value="b4"> Night<br>
-  <input type="radio" name="background" value="b5"> Snow<br>
-  <input type="radio" name="background" value="b6"> Lake<br>
-  <input type="radio" name="background" value="none"> None<br>
+<form action="Interactions.js" id="buttons">
+  <input type="radio" name="background" id="b1" value="b1"> Blue skies<br>
+  <input type="radio" name="background" id="b2" value="b2"> Sun!<br>
+  <input type="radio" name="background" id="b3" value="b3"> Lightning<br>
+  <input type="radio" name="background" id="b4" value="b4"> Night<br>
+  <input type="radio" name="background" id="b5" value="b5"> Snow<br>
+  <input type="radio" name="background" id="b6" value="b6"> Lake<br>
+  <input type="radio" name="background" id="b0" value="none"> None<br>
 </form>
 
 
@@ -158,8 +185,9 @@ h2{
 <div id="instructions">
 	<h2>Instructions</h2>
 		<ol><li>Choose one option from each of the buttons on the side.</li>
-		<li>The avatar will redraw itself into your choises.</li>
-		<li>Make any changes to your previous choises if you want to.</li>
+		<li>Click the "Update Person" button.</li>
+		<li>The avatar will redraw itself into your choices.</li>
+		<li>Make any changes to your previous choises if you want to, clicking "Update Person" after you change your choices.</li>
 		<li>When you're happy with your person, right click it. Then you can save it as an image!</li>
 		</ol>
 
