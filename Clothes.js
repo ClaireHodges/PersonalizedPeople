@@ -18,7 +18,7 @@ function legs(){
 	ctx.fill(path);
 }
 
-legs();
+//legs();
 
 function triangleshirt(){
 	ctx.fillStyle = "#D3D3D3";
@@ -36,7 +36,7 @@ function triangleshirt(){
 	ctx.fill(path);
 }
 
-triangleshirt();
+//triangleshirt();
 
 function curvedshirt(){
 	ctx.fillStyle = "#D3D3D3";
@@ -61,7 +61,7 @@ function curvedshirt(){
 
 }
 
-curvedshirt();
+//curvedshirt();
 
 function shortsleeve(){
 	var path = new Path2D;
@@ -77,7 +77,7 @@ function shortsleeve(){
 	ctx.fill(path);
 }
 
-shortsleeve();
+//shortsleeve();
 
 function longsleeve(){
 	var path = new Path2D;
@@ -94,6 +94,26 @@ function longsleeve(){
 }
 
 //longsleeve();
+
+function trilong(){
+	longsleeve();
+	triangleshirt();
+}
+
+function trishort(){
+	shortsleeve();
+	triangleshirt();
+}
+
+function curvelong(){
+	curvedshirt();
+	longsleeve();
+}
+
+function curveshort(){
+	curvedshirt();
+	shortsleeve();
+}
 
 function pants1(){
 	ctx.fillStyle = "#FFFF00";
@@ -168,7 +188,7 @@ function skirt2(){
 	ctx.fill(path);
 }
 
-skirt2();
+//skirt2();
 
 function skirt3(){
 	ctx.fillStyle = "#FF0000";
@@ -182,7 +202,7 @@ function skirt3(){
 
 //skirt3();
 
-function shoes1(){
+function shoes5(){
 	ctx.fillStyle = "#0000FF";
 	ctx.fillRect(390,450,60,25);
 	ctx.fillRect(310,450,-60,25);
@@ -206,9 +226,9 @@ function shoes1(){
 	ctx.fill(path);
 	
 }
-shoes1();
+//shoes5();
 
-function shoes2(){
+function shoes4(){
 	ctx.fillStyle = "#0000FF";
 	ctx.fillRect(390,450,40,25);
 	ctx.fillRect(310,450,-40,25);
@@ -361,13 +381,13 @@ function hp(){
 
 //hp();
 
-function hat1(){
+function hat6(){
 	var path = new Path2D;
 	path.arc(350,70,45,1*Math.PI,2*Math.PI);
 	path.lineTo(305,68);
 	path.lineTo(275,68);
 	path.lineTo(275,62);
-	path.lineTo(307,62)
+	path.lineTo(307,62);
 	ctx.fill(path);
 }
 
@@ -375,7 +395,7 @@ function hat1(){
 
 //wand
 
-function hat2(){
+function hat5(){
 	var path = new Path2D;
 	path.arc(350,70,45,1*Math.PI,2*Math.PI);
 	ctx.fill(path); 
@@ -396,7 +416,7 @@ function hat2(){
 
 //hat2();
 
-function hat3(){
+function hat4(){
 	ctx.strokeRect(285,60,130,10);
 	ctx.fillRect(285,60,130,10);
 

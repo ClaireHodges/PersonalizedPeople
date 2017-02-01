@@ -214,6 +214,27 @@ clLEyelash();
 // 	path.moveTo();
 // 	path.lineTo();
 // }
+
+function closedEyelash(){
+	closedREye();
+	closedLEye();
+	clLEyelash();
+	clREyelash();
+}
+
+function openEyelash(){
+	openREye();
+}
+
+function close(){
+	closedREye();
+	closedLEye();
+}
+
+function open(){
+	openREye();
+}
+
 function LArm(){
 	ctx.fillStyle = skinColor;
 	var path = new Path2D;
@@ -275,5 +296,16 @@ LHand();
 // 	ctx.fill(path);
 // }
 // hairBehind();
+
+function body(){
+	LHand();
+	RHand();
+	RArm();
+	LArm();
+	dftMouth();
+	dftFace();
+	neck();
+	legs();
+}
 
 
