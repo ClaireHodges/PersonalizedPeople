@@ -30,7 +30,7 @@ ctx.stroke();
 
             var sWidth = canvas.width;
             var sHeight = canvas.height;
-            var path=new Path2D();
+            var path = new Path2D();
             path.moveTo((sWidth/2)+50,sHeight/2);
             path.lineTo((sWidth/2),(sHeight/2)-50);
             path.lineTo((sWidth/2)-50,sHeight/2);
