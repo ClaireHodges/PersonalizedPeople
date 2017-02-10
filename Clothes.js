@@ -398,8 +398,7 @@ function hp(){
 }
 
 //hp();
-<<<<<<< HEAD
-=======
+
 
 function hat6(){
 	var path = new Path2D;
@@ -460,7 +459,6 @@ function bracelet1(){
 
 //bracelet1();
 
->>>>>>> 138b9fb6da0626abd6caaf519d2de02d2dac2f3f
 function sHair(){
 	var path = new Path2D();
 	ctx.fillStyle = hairColor;
