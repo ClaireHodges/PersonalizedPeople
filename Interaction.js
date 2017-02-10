@@ -303,3 +303,14 @@ var no5 = document.getElementById("none5");
 
 }
 //document.getElementById("canvas").draw[1];
+
+
+
+/*
+Test...
+hair not working
+white fill on glasses
+white fill on sleeves in tri shirt
+
+*/
+
