@@ -10,7 +10,7 @@ var ctx = canvas.getContext("2d");
 function check(){
 var draw = [body(),none(),none(),none(),closedEyelash(),none(),roundNose(),curveshort(),pants1(),shoes4(),none()]
 //variable list
-var h1 = document.getElementById("h1");
+var h1 = document.getElementById("h1");//hair
 var h2 = document.getElementById("h2");
 var h3 = document.getElementById("h3");
 var h4 = document.getElementById("h4");
@@ -21,17 +21,17 @@ var hat3 = document.getElementById("hat3");
 
 var scar1 = document.getElementById("scar1");
 
-var e1 = document.getElementById("e1");
+var e1 = document.getElementById("e1"); //eyes
 var e2 = document.getElementById("e2");
 var e3 = document.getElementById("e3");
 var e4 = document.getElementById("e4");
 
-var g1 = document.getElementById("g1");
+var g1 = document.getElementById("g1");//glasses
 var g2 = document.getElementById("g2");
 var g3 = document.getElementById("g3");
 var g4 = document.getElementById("g4");
 
-var n1 = document.getElementById("n1");
+var n1 = document.getElementById("n1");//nose
 var n2 = document.getElementById("n2");
 
 var s1 = document.getElementById("s1");
