@@ -8,7 +8,10 @@ var ctx = canvas.getContext("2d");
 //array= [body,hair, hats, scar, eyes, glasses, nose, shirts, bottoms, shoes, background]
 
 function check(){
-var draw = [body(),none(),none(),none(),closedEyelash(),none(),roundNose(),curveshort(),pants1(),shoes4(),none()]
+		ctx.fillStyle = "#FFFFFF"
+	ctx.fillRect(0,0,750,500);
+var draw = [];
+//draws over pre-set functions, without erasing. Include in if statements instead?
 //variable list
 var h1 = document.getElementById("h1");//hair
 var h2 = document.getElementById("h2");
@@ -63,204 +66,251 @@ var no3 = document.getElementById("none3");
 var no4 = document.getElementById("none4");
 var no5 = document.getElementById("none5");
 
+	//Background
+	if (b1.checked == true){
+		background1();
+		h2.checked = true;
+	}
+	else if(b2.checked == true){
+		background2();
+		h2.checked = true;
+	}
+	else if(b3.checked == true){
+		background3();
+		h2.checked = true;
+	}
+	else if(b4.checked == true){
+		background4();
+		h2.checked = true;
+	}
+	else if (b5.checked == true){
+		background5();
+		h2.checked = true;
+	}
+	else if(b6.checked == true){
+		background6();
+		h2.checked = true;
+	}
+	else if (no5.checked == true){
+		none();
+		h2.checked = true;
+	}
+	else{
+		none();
+		h2.checked = true;
+	}
+	//background draws in front of person. REORDER ARRAY
+
+	//Shirts
+	if(s1.checked == true){
+		curveshort();
+		h2.checked = true;
+	}
+	else if(s2.checked == true){
+		curvelong();
+		h2.checked = true;
+	}
+	//arms don't align to sleeves
+
+	else if (s3.checked == true){
+		trishort();
+		h2.checked = true;
+	}
+	else if(s4.checked == true){
+		trilong();
+		h2.checked = true;
+	}
+	else{
+		curveshort();
+		h2.checked = true;
+	}
 
 	//HAIR
 	if (h1.checked == true){
-		draw[1] = sHair();
+		sHair();
 		h2.checked = true;
 
 	}
 	else if(h2.checked == true){
-		draw[1] = mHair();
+		mHair();
 		h1.checked = true;
 	}
 	else if(h3.checked == true){
-		draw[1] = lHair();
+		lHair();
 		h2.checked = true;
 	}
 	else if(h4.checked == true){
-		draw[1] = baldoHair();
+		baldoHair();
+		h2.checked = true;
+	}
+	else if(no1.checked == true){
+		none();
 		h2.checked = true;
 	}
 	
 
 	//HAT
-	else if (hat1.checked == true){
-		draw[2] = hat6();
+	if (hat1.checked == true){
+		hat6();
 		h2.checked = true;
 	}
 	else if(hat2.checked == true){
-		draw[2] = hat5();
+		hat5();
 		h2.checked = true;
 	}
 	else if(hat3.checked == true){
-		draw[2] = hat4();
+		hat4();
+		h2.checked = true;
+	}
+	else if(no2.checked == true){
+		none();
 		h2.checked = true;
 	}
 
 	//Scar
-	else if(scar1.checked == true){
-		draw[3] = hp();
+	//can't see well with hair
+	if(scar1.checked == true){
+		hp();
 		h2.checked = true;
 	}
+	else if(no3.checked == true){
+		draw[4] = none();
+		h2.checked = true;
+	}
+
 	
 	//Eyes
-	else if (e1.checked == true){
-		draw[4] = close();
+	//incomplete open eyes
+	if (e1.checked == true){
+		close();
 		h2.checked = true;
 	}
 	else if(e2.checked == true){
-		draw[4] = open();
+		open();
 		h2.checked = true;
 	}
 	else if(e3.checked == true){
-		draw[4] = closedEyelash();
+		closedEyelash();
 		h2.checked = true;
 	}
 	else if(e4.checked == true){
-		draw[4] = openEyelash();
+		openEyelash();
+		h2.checked = true;
+	}
+	else{
+		close();
 		h2.checked = true;
 	}
 
 	//Glasses
-	else if (g1.checked == true){
-		draw[5] = glasses1();
+	if (g1.checked == true){
+		glasses1();
 		h2.checked = true;
 	}
 	else if(g2.checked == true){
-		draw[5] = glasses2();
+		glasses2();
 		h2.checked = true;
 	}
 	else if(g3.checked == true){
-		draw[5] = glasses3();
+		glasses3();
 		h2.checked = true;
 	}
 	else if(g4.checked == true){
-		draw[5] = glasses4();
+		glasses4();
+		h2.checked = true;
+	}
+	else if(no4.checked == true){
+		none();
 		h2.checked = true;
 	}
 
 	//Nose
-	else if (n1.checked == true){
-		draw[6] = dftNose();
+	if (n1.checked == true){
+		dftNose();
 		h2.checked = true;
 	}
 	else if(n2.checked == true){
-		draw[6] = roundNose();
+		roundNose();
 		h2.checked = true;
 	}
-
-	//Shirts
-	else if(s1.checked == true){
-		draw[6] = curveshort();
-		h2.checked = true;
-	}
-	else if(s2.checked == true){
-		draw[6] = curvelong();
-		h2.checked = true;
-	}
-
-	else if (s3.checked == true){
-		draw[7] = trilong();
-		h2.checked = true;
-	}
-	else if(s4.checked == true){
-		draw[7] = trishort();
+	else{
+		roundNose();
 		h2.checked = true;
 	}
 
 	//Bottoms
-	else if(p1.checked == true){
-		draw[7] = pants1();
+	if(p1.checked == true){
+		pants1();
 		h2.checked = true;
 	}
 	else if(p2.checked == true){
-		draw[7] = shorts1();
+		shorts1();
 		h2.checked = true;
 	}
 	else if (p3.checked == true){
-		draw[8] = shorts2();
+		shorts2();
 		h2.checked = true;
 	}
 	else if(p4.checked == true){
-		draw[8] = skirt1();
+		skirt1();
 		h2.checked = true;
 	}
 	else if(p5.checked == true){
-		draw[8] = skirt2();
+		skirt2();
 		h2.checked = true;
 	}
 	else if(p6.checked == true){
-		draw[8] = skirt3();
-		h2.checked = true;
-	}
-
-	//Shoes
-	else if (shoes1.checked == true){
-		draw[9] = shoes5();
-		h2.checked = true;
-	}
-	else if(shoes2.checked == true){
-		draw[9] = shoes4();
-		h2.checked = true;
-	}
-	else if(shoes3.checked == true){
-		draw[9] = boots();
-		h2.checked = true;
-	}
-
-	//Background
-	else if (b1.checked == true){
-		draw[10] = background1();
-		h2.checked = true;
-	}
-	else if(b2.checked == true){
-		draw[10] = background2();
-		h2.checked = true;
-	}
-	else if(b3.checked == true){
-		draw[10] = background3();
-		h2.checked = true;
-	}
-	else if(b4.checked == true){
-		draw[10] = background4();
-		h2.checked = true;
-	}
-	else if (b5.checked == true){
-		draw[10] = background5();
-		h2.checked = true;
-	}
-	else if(b6.checked == true){
-		draw[10] = background6();
-		h2.checked = true;
-	}
-	//When No is option
-	else if (no1.checked == true){
-		draw[1] = none();
-		h2.checked = true;
-	}
-	else if(no2.checked == true){
-		draw[2] = none();
-		h2.checked = true;
-	}
-	else if(no3.checked == true){
-		draw[3] = none();
-		h2.checked = true;
-	}
-	else if(no4.checked == true){
-		draw[5] = none();
-		h2.checked = true;
-	}
-	else if (no5.checked == true){
-		draw[10] = none();
+		if(shoes3.checked == true){
+			boots();
+		}
+		skirt3();
 		h2.checked = true;
 	}
 	else{
-		h1.checked = true;
+		pants1();
+		none();
+		h2.checked = true;
 	}
-	for (i = 0; i < draw.length; i++) {
-    draw[i]();
+
+
+	//Shoes
+	if (shoes1.checked == true){
+		shoes5();
+		h2.checked = true;
 	}
+	else if(shoes2.checked == true){
+		shoes4();
+		h2.checked = true;
+	}
+	else if(shoes3.checked == true){
+		if(p6 != true){
+			boots();
+		}
+		h2.checked = true;
+	}
+	else{
+		shoes5();
+		h2.checked = true;
+	}
+	//these draw over the skirt. Reorder array list!!! Have to have seperate skirt and pants order
+	//because boots need to draw over pants and under skirt
+
+
+	//run through array
+	//for (i = 0; i =11; i++) {
+    //draw[i]();
+	//}
 
 }
 //document.getElementById("canvas").draw[1];
+
+
+
+/*
+Test...
+hair not working
+white fill on glasses
+white fill on sleeves in tri shirt
+
+*/
+

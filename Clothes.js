@@ -398,8 +398,7 @@ function hp(){
 }
 
 //hp();
-<<<<<<< HEAD
-=======
+
 
 function hat6(){
 	var path = new Path2D;
@@ -448,7 +447,7 @@ function hat4(){
 	ctx.fill(path);
 }
 
-//hat3();
+hat4();
 
 function bracelet1(){
 	fillStyle = "#FFFFFF"
@@ -460,7 +459,6 @@ function bracelet1(){
 
 //bracelet1();
 
->>>>>>> 138b9fb6da0626abd6caaf519d2de02d2dac2f3f
 function sHair(){
 	var path = new Path2D();
 	ctx.fillStyle = hairColor;
@@ -523,9 +521,10 @@ function mHair(){
 
 	ctx.fill(path);
 }
-mHair();
+//mHair();
 function lHair(){
 	ctx.fillStyle = hairColor;
+	//top of hair
 	ctx.beginPath();
 	ctx.arc(350, 85, 50, 0, 2*Math.PI/1.4, true);
 	ctx.closePath(); //10, 45 *Math.PI/180, 135 * Math.PI/180);
@@ -536,7 +535,7 @@ function lHair(){
 	ctx.closePath();
 	ctx.fill(path);
 
-	//left side
+	//left side botom
 	var path = new Path2D();
 	path.moveTo(300, 123);
 	path.arc(350, 85, 44, 119*Math.PI/180, 190*Math.PI/180);
@@ -547,19 +546,25 @@ function lHair(){
 	path.lineTo(329, 123);
 	
 	ctx.fill(path);
-
-	//right side
-	path.moveTo(400, 84);
-	path.lineTo(400, 185);
-	path.moveTo(373, 124);
+	//right side bottom
+	path.moveTo(400, 123);
+	path.arc(350, 85, 45, 355*Math.PI/180, 59*Math.PI/180);
+	path.moveTo(373, 123);
 	path.lineTo(373, 185);
-	path.lineTo(400,185);
+	path.lineTo(400, 185);
+	path.lineTo(400, 123);
+	
+	path.moveTo(395, 85);
+	path.lineTo(395, 80);
+	path.lineTo(400, 84);
+	path.lineTo(400, 123);
 
-	//to fill in
-	ctx.stroke(path);
+	ctx.fill(path);
+
+
 }
 
-//lHair();
+lHair();
 function baldoHair(){
 	ctx.fillStyle = hairColor; 
 	var path = new Path2D();
