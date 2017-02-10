@@ -1,8 +1,30 @@
 var canvas = document.getElementById("canvas");
 
-var skinColor = "red";
-var hairColor = "black"; //will change these to take user input soon
-var accentSkin = "white";
+//skin color options; increasingly get darker with the numbering
+var skinColor1 = "FFDBAC";
+var skinColor2 = "F1C27D";
+var skinColor3 = "E0AC69";
+var skinColor4 = "C68642";
+var skinColor5 = "#8D5524";
+
+
+//this variable represents the the color that the user actually
+//choses from the options above
+var skinColor;
+skinColor = skinColor2;
+
+//accent skin options that correspond to the above options
+var accentSkin1 = "F1C27D";
+var accentSkin2 = "E0AC69";
+var accentSkin3 = "C68642";
+var accentskin4 = "#8D5524";
+var accentSkin5 = "black"; //this should be adjusted
+
+var accentSkin;//the value that the user actually chooses
+accentSkin = accentSkin2;
+
+
+
 
 function showCoords(){
 	var x = event.clientX - canvas.offsetLeft;
