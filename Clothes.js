@@ -428,7 +428,7 @@ function hat4(){
 	ctx.fill(path);
 }
 
-//hat3();
+hat4();
 
 function bracelet1(){
 	fillStyle = "#FFFFFF"
@@ -541,7 +541,7 @@ function lHair(){
 	ctx.stroke(path);
 }
 
-lHair();
+//lHair();
 function baldoHair(){
 	ctx.fillStyle = hairColor; 
 	var path = new Path2D();
