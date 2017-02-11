@@ -16,7 +16,7 @@ var hairBlack = "black";
 var hairBlond = "#e6b800";
 var hairLtBrown = "#b38600";
 var hairdBrown = "#663300";
-var hairGray = "gray";
+var hairGray = "d1cdc8";
 
 var hairColor; //value the user chooses
 hairColor = hairBlond; //this is just for testing
