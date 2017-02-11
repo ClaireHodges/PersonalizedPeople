@@ -92,7 +92,7 @@ var no5 = document.getElementById("none5");
 		none();
 	}
 	//background draws in front of person. REORDER ARRAY
-		body();
+	body();
 
 	//Scar
 	//can't see well with hair
@@ -262,17 +262,7 @@ var no5 = document.getElementById("none5");
 		shoes5();
 		 
 	}
-	//these draw over the skirt. Reorder array list!!! Have to have seperate skirt and pants order
-	//because boots need to draw over pants and under skirt
-
-
-	//run through array
-	//for (i = 0; i =11; i++) {
-    //draw[i]();
-	//}
-
 }
-//document.getElementById("canvas").draw[1];
 
 
 

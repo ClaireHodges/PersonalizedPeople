@@ -57,6 +57,18 @@ h2{
 	text-decoration:underline;
 }
 
+.radio_item{
+display: none;
+}
+
+.radio_item + label{
+	opacity:0.8;
+}
+
+.radio_item:checked + label {
+opacity: 1;
+}
+
 </style>
 <script src="Extra-Random.js"></script>
 <script src="Interaction.js"></script>
@@ -72,6 +84,23 @@ h2{
 <button onclick="check()" id="button">Update Person</button>
 
 <div id="div">
+
+<h2>Skin Color:</h2>
+<input type="radio" class="radio_item" value="" name="item" id="radio1">
+<label for="radio1"> <img src="./Colors/skin5.png" width = "30px" height="30px"> </label>
+
+<input type="radio" class="radio_item" value="" name="item" id="radio2">
+<label for="radio2"> <img src="./Colors/skin4.png" width = "30px" height="30px"> </label>
+
+<input type="radio" class="radio_item" value="" name="item" id="radio3">
+<label for="radio3"> <img src="./Colors/skin3.png" width = "30px" height="30px"> </label>
+
+<input type="radio" class="radio_item" value="" name="item" id="radio4">
+<label for="radio4"> <img src="./Colors/skin2.png" width = "30px" height="30px"> </label>
+
+<input type="radio" class="radio_item" value="" name="item" id="radio5">
+<label for="radio5"> <img src="./Colors/skin1.png" width = "30px" height="30px"> </label>
+
 <h2>Hair:</h2>
 <form action="" id="buttons">
 
@@ -79,7 +108,22 @@ h2{
   <input type="radio" name="hair" id="h2" value="medium"> Medium<br>
   <input type="radio" name="hair" id="h3" value="long"> Long<br>
   <input type="radio" name="hair" id="h4" value="spikey"> "I'm not bald!"<br>
-  <input type="radio" name="hair" id="h5" value="none"> "Ok I am bald, but let's not talk about it"<br>
+  <input type="radio" name="hair" id="none1" value="none"> "Ok I am bald, but let's not talk about it"<br>
+
+<input type="radio" class="radio_item" value="" name="item" id="radio6">
+<label for="radio6"> <img src="./Colors/black.png" width = "30px" height="30px"> </label>
+
+<input type="radio" class="radio_item" value="" name="item" id="radio7">
+<label for="radio7"> <img src="./Colors/blond.png" width = "30px" height="30px"> </label>
+
+<input type="radio" class="radio_item" value="" name="item" id="radio8">
+<label for="radio8"> <img src="./Colors/ltbrown.png" width = "30px" height="30px"> </label>
+
+<input type="radio" class="radio_item" value="" name="item" id="radio9">
+<label for="radio9"> <img src="./Colors/dbrown.png" width = "30px" height="30px"> </label>
+
+<input type="radio" class="radio_item" value="" name="item" id="radio10">
+<label for="radio10"> <img src="./Colors/gray.png" width = "30px" height="30px"> </label>
 
 
 
@@ -93,6 +137,27 @@ h2{
   <input type="radio" name="hat" id="hat3" value="fedora"> Fedora<br>
   <input type="radio" name="hat" id="none2" value="none"> none
 </form>
+
+<input type="radio" class="radio_item" value="" name="item" id="radio11">
+<label for="radio11"> <img src="./Colors/red.png" width = "30px" height="30px"> </label>
+
+<input type="radio" class="radio_item" value="" name="item" id="radio12">
+<label for="radio12"> <img src="./Colors/blue.png" width = "30px" height="30px"> </label>
+
+<input type="radio" class="radio_item" value="" name="item" id="radio13">
+<label for="radio13"> <img src="./Colors/yellow.png" width = "30px" height="30px"> </label>
+
+<input type="radio" class="radio_item" value="" name="item" id="radio14">
+<label for="radio14"> <img src="./Colors/green.png" width = "30px" height="30px"> </label>
+
+<input type="radio" class="radio_item" value="" name="item" id="radio15">
+<label for="radio15"> <img src="./Colors/pink.png" width = "30px" height="30px"> </label>
+
+<input type="radio" class="radio_item" value="" name="item" id="radio16">
+<label for="radio16"> <img src="./Colors/purple.png" width = "30px" height="30px"> </label>
+
+<input type="radio" class="radio_item" value="" name="item" id="radio17">
+<label for="radio17"> <img src="./Colors/orange.png" width = "30px" height="30px"> </label>
 
 <br>
 
@@ -123,6 +188,27 @@ h2{
   <input type="radio" name="Glasses" id="none4" value="g0"> None
 </form>
 
+<input type="radio" class="radio_item" value="" name="item" id="radio18">
+<label for="radio18"> <img src="./Colors/red.png" width = "30px" height="30px"> </label>
+
+<input type="radio" class="radio_item" value="" name="item" id="radio19">
+<label for="radio19"> <img src="./Colors/blue.png" width = "30px" height="30px"> </label>
+
+<input type="radio" class="radio_item" value="" name="item" id="radio20">
+<label for="radio20"> <img src="./Colors/yellow.png" width = "30px" height="30px"> </label>
+
+<input type="radio" class="radio_item" value="" name="item" id="radio21">
+<label for="radio21"> <img src="./Colors/green.png" width = "30px" height="30px"> </label>
+
+<input type="radio" class="radio_item" value="" name="item" id="radio22">
+<label for="radio22"> <img src="./Colors/pink.png" width = "30px" height="30px"> </label>
+
+<input type="radio" class="radio_item" value="" name="item" id="radio23">
+<label for="radio23"> <img src="./Colors/purple.png" width = "30px" height="30px"> </label>
+
+<input type="radio" class="radio_item" value="" name="item" id="radio24">
+<label for="radio24"> <img src="./Colors/orange.png" width = "30px" height="30px"> </label>
+
 <br>
 
 <h2>Nose:</h2>
@@ -149,6 +235,27 @@ h2{
   <input type="radio" name="shirt" id="s4" value="trilong"> Triangular neckline, Long sleeves
 </form>
 
+<input type="radio" class="radio_item" value="" name="item" id="radio25">
+<label for="radio25"> <img src="./Colors/red.png" width = "30px" height="30px"> </label>
+
+<input type="radio" class="radio_item" value="" name="item" id="radio26">
+<label for="radio26"> <img src="./Colors/blue.png" width = "30px" height="30px"> </label>
+
+<input type="radio" class="radio_item" value="" name="item" id="radio27">
+<label for="radio27"> <img src="./Colors/yellow.png" width = "30px" height="30px"> </label>
+
+<input type="radio" class="radio_item" value="" name="item" id="radio28">
+<label for="radio28"> <img src="./Colors/green.png" width = "30px" height="30px"> </label>
+
+<input type="radio" class="radio_item" value="" name="item" id="radio29">
+<label for="radio29"> <img src="./Colors/pink.png" width = "30px" height="30px"> </label>
+
+<input type="radio" class="radio_item" value="" name="item" id="radio30">
+<label for="radio30"> <img src="./Colors/purple.png" width = "30px" height="30px"> </label>
+
+<input type="radio" class="radio_item" value="" name="item" id="radio31">
+<label for="radio31"> <img src="./Colors/orange.png" width = "30px" height="30px"> </label>
+
 <br>
 
 <h2>Bottoms:</h2>
@@ -161,6 +268,27 @@ h2{
   <input type="radio" name="bottoms" id="p6" value="skirt3"> Long skirt
 </form>
 
+<input type="radio" class="radio_item" value="" name="item" id="radio32">
+<label for="radio32"> <img src="./Colors/red.png" width = "30px" height="30px"> </label>
+
+<input type="radio" class="radio_item" value="" name="item" id="radio33">
+<label for="radio33"> <img src="./Colors/blue.png" width = "30px" height="30px"> </label>
+
+<input type="radio" class="radio_item" value="" name="item" id="radio34">
+<label for="radio34"> <img src="./Colors/yellow.png" width = "30px" height="30px"> </label>
+
+<input type="radio" class="radio_item" value="" name="item" id="radio35">
+<label for="radio35"> <img src="./Colors/green.png" width = "30px" height="30px"> </label>
+
+<input type="radio" class="radio_item" value="" name="item" id="radio36">
+<label for="radio36"> <img src="./Colors/pink.png" width = "30px" height="30px"> </label>
+
+<input type="radio" class="radio_item" value="" name="item" id="radio37">
+<label for="radio37"> <img src="./Colors/purple.png" width = "30px" height="30px"> </label>
+
+<input type="radio" class="radio_item" value="" name="item" id="radio38">
+<label for="radio38"> <img src="./Colors/orange.png" width = "30px" height="30px"> </label>
+
 <br>
 
 <h2>Shoes:</h2>
@@ -169,6 +297,27 @@ h2{
   <input type="radio" name="shoes" id="shoes2" value="shoes2"> Round shoes<br>
   <input type="radio" name="shoes" id="shoes3" value="boots"> Boots
 </form>
+
+<input type="radio" class="radio_item" value="" name="item" id="radio39">
+<label for="radio39"> <img src="./Colors/red.png" width = "30px" height="30px"> </label>
+
+<input type="radio" class="radio_item" value="" name="item" id="radio40">
+<label for="radio40"> <img src="./Colors/blue.png" width = "30px" height="30px"> </label>
+
+<input type="radio" class="radio_item" value="" name="item" id="radio41">
+<label for="radio41"> <img src="./Colors/yellow.png" width = "30px" height="30px"> </label>
+
+<input type="radio" class="radio_item" value="" name="item" id="radio42">
+<label for="radio42"> <img src="./Colors/green.png" width = "30px" height="30px"> </label>
+
+<input type="radio" class="radio_item" value="" name="item" id="radio43">
+<label for="radio43"> <img src="./Colors/pink.png" width = "30px" height="30px"> </label>
+
+<input type="radio" class="radio_item" value="" name="item" id="radio44">
+<label for="radio44"> <img src="./Colors/purple.png" width = "30px" height="30px"> </label>
+
+<input type="radio" class="radio_item" value="" name="item" id="radio45">
+<label for="radio45"> <img src="./Colors/orange.png" width = "30px" height="30px"> </label>
 
 <br>
 
@@ -196,6 +345,10 @@ h2{
 		</ol>
 
 </div>
+
+
+
+
 
 </body>
 
