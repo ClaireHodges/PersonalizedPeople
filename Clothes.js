@@ -16,6 +16,7 @@ var shirtColor;
 var shoeColor;
 var glassColor;
 var braceColor;
+var necklaceColor;
 
 
 
@@ -48,7 +49,7 @@ hairColor = hairBlond; //this is just for testing
 //legs();
 
 function triangleshirt(){
-	ctx.fillStyle = "#D3D3D3";
+	ctx.fillStyle = shirtColor;
 	//default color, apply later!
 	ctx.fillRect(300,150,100,150);
 
@@ -66,7 +67,7 @@ function triangleshirt(){
 //triangleshirt();
 
 function curvedshirt(){
-	ctx.fillStyle = "#D3D3D3";
+	ctx.fillStyle = shirtColor;
 	//default color, apply later!
 	ctx.fillRect(300,150,100,150);
 
@@ -92,6 +93,7 @@ curvedshirt();
 
 function shortsleeve(){
 	var path = new Path2D;
+	ctx.fillStyle = shirtColor;
 	path.moveTo(300,120);
 	path.lineTo(350,150);
 	path.lineTo(275,200);
@@ -108,7 +110,7 @@ function shortsleeve(){
 
 function longsleeve(){
 	var path = new Path2D;//add fill style
-
+	ctx.fillStyle = shirtColor;
 	path.moveTo(300,120);
 	path.lineTo(350,150);
 	path.lineTo(175,250); //ll
@@ -161,7 +163,7 @@ function pants1(){
 //pants1();
 
 function shorts1(){
-	ctx.fillStyle = "#FF0000";
+	ctx.fillStyle = bottomColor;
 	var path = new Path2D;
 	path.moveTo(300,300);
 
@@ -178,7 +180,7 @@ function shorts1(){
 //shorts1();
 
 function shorts2(){
-	ctx.fillStyle = "#FF0000";
+	ctx.fillStyle = bottomColor;
 	var path = new Path2D;
 	path.moveTo(300,300);
 
@@ -195,7 +197,7 @@ function shorts2(){
 //shorts2();
 
 function skirt1(){
-	ctx.fillStyle = "#FF0000";
+	ctx.fillStyle = bottomColor;
 	var path = new Path2D;
 	path.moveTo(300,300);
 	path.lineTo(280,370);
@@ -207,7 +209,7 @@ function skirt1(){
 //skirt1();
 
 function skirt2(){
-	ctx.fillStyle = "#FF0000";
+	ctx.fillStyle = bottomColor;
 	var path = new Path2D;
 	path.moveTo(300,300);
 	path.lineTo(280,390);
@@ -219,7 +221,7 @@ function skirt2(){
 //skirt2();
 
 function skirt3(){
-	ctx.fillStyle = "#FF0000";
+	ctx.fillStyle = bottomColor;
 	var path = new Path2D;
 	path.moveTo(300,300);
 	path.lineTo(270,430);
@@ -231,7 +233,7 @@ function skirt3(){
 //skirt3();
 
 function shoes5(){
-	ctx.fillStyle = "#0000FF";
+	ctx.fillStyle = shoeColor;
 	ctx.fillRect(390,450,60,25);
 	ctx.fillRect(310,450,-60,25);
 
@@ -257,7 +259,7 @@ function shoes5(){
 //shoes5();
 
 function shoes4(){
-	ctx.fillStyle = "#0000FF";
+	ctx.fillStyle = shoeColor;
 	ctx.fillRect(390,450,40,25);
 	ctx.fillRect(310,450,-40,25);
 
@@ -290,7 +292,7 @@ function shoes4(){
 //shoes2();
 
 function boots(){
-	ctx.fillStyle = "#0000FF";
+	ctx.fillStyle = shoeColor;
 	ctx.fillRect(390,450,70,30);
 	ctx.fillRect(310,450,-70,30);
 
@@ -324,6 +326,7 @@ function boots(){
 
 function glasses1(){
 	var path = new Path2D;
+	ctx.fillStyle = glassColor;
 	path.arc(330,85,10,0,2*Math.PI);
 	path.moveTo(380,85);
 	path.arc(370,85,10,0,2*Math.PI);
@@ -344,6 +347,7 @@ function glasses1(){
 
 function glasses2(){
 	var path = new Path2D;
+	ctx.fillStyle = glassColor;
 	path.arc(330,80,15,0,1*Math.PI);
 	path.moveTo(385,80);
 	path.arc(370,80,15,0,1*Math.PI);
@@ -361,6 +365,7 @@ function glasses2(){
 
 function glasses3(){
 	var path = new Path2D;
+	ctx.fillStyle = glassColor;
 	path.arc(330,80,15,0,1*Math.PI);
 	path.moveTo(385,80);
 	path.arc(370,80,15,0,1*Math.PI);
@@ -379,6 +384,7 @@ function glasses3(){
 
 function glasses4(){
 	var path = new Path2D;
+	ctx.fillStyle = glassColor;
 	path.arc(330,85,15,0,2*Math.PI);
 	path.moveTo(385,85);
 	path.arc(370,85,15,0,2*Math.PI);
@@ -399,6 +405,7 @@ function glasses4(){
 
 function hp(){
 	var path = new Path2D;
+	ctx.fillStyle = "black";
 	path.moveTo(340,65);
 	path.lineTo(337,75);
 	path.lineTo(345,70);
@@ -412,6 +419,7 @@ hp();
 
 function hat6(){
 	var path = new Path2D;
+	ctx.fillStyle = hatColor;
 	path.arc(350,70,45,1*Math.PI,2*Math.PI);
 	path.lineTo(305,68);
 	path.lineTo(275,68);
@@ -426,6 +434,7 @@ function hat6(){
 
 function hat5(){
 	var path = new Path2D;
+	ctx.fillStyle = hatColor;
 	path.arc(350,70,45,1*Math.PI,2*Math.PI);
 	ctx.fill(path); 
 
@@ -446,9 +455,9 @@ function hat5(){
 //hat2();
 
 function hat4(){
+	ctx.fillStyle = hatColor;
 	ctx.strokeRect(285,60,130,10);
 	ctx.fillRect(285,60,130,10);
-
 	var path = new Path2D;
 	path.moveTo(305,60);
 	path.lineTo(320,35);
@@ -460,7 +469,7 @@ function hat4(){
 hat4();
 
 function bracelet4(){
-	ctx.fillStyle = "#FF0000"
+	ctx.fillStyle = braceColor;
 	var path = new Path2D;
 	path.moveTo(515,237);
 	path.lineTo(528,213);
@@ -472,7 +481,7 @@ function bracelet4(){
 //bracelet2();
 
 function bracelet5(){
-	ctx.fillStyle = "#FF0000"
+	ctx.fillStyle = braceColor;
 	var path = new Path2D;
 	path.moveTo(517,241);
 	path.arc(517,238,5,0*Math.PI,2*Math.PI);
@@ -490,7 +499,7 @@ function bracelet5(){
 //bracelet3();
 
 function necklace5(){
-	ctx.fillStyle = "#FF0000"
+	ctx.fillStyle = necklaceColor;
 	var path = new Path2D;
 	path.moveTo(331,131);
 	path.arc(331,131,5,0*Math.PI,2*Math.PI);
@@ -512,7 +521,7 @@ function necklace5(){
 //necklace5();
 
 function necklace4(){
-	ctx.fillStyle = "#FF0000";
+	ctx.fillStyle = necklaceColor;
 	var path = new Path2D;
 	path.moveTo(325,131);
 	path.lineTo(350,150);
@@ -528,7 +537,7 @@ function necklace4(){
 necklace4();
 
 function necklace6(){
-	ctx.fillStyle = "#FF0000"
+	ctx.fillStyle = necklaceColor;
 	var path = new Path2D;
 	path.moveTo(325,131);
 	path.lineTo(350,150);
@@ -718,6 +727,7 @@ function baldoHair(){
 
 
 function hat1(){
+	ctx.fillStyle = hatColor;
 	var path = new Path2D;
 	path.arc(350,70,45,1*Math.PI,2*Math.PI);
 	path.lineTo(305,68);
@@ -732,6 +742,7 @@ function hat1(){
 //wand
 
 function hat2(){
+	ctx.fillStyle = hatColor;
 	var path = new Path2D;
 	path.arc(350,70,45,1*Math.PI,2*Math.PI);
 	ctx.fill(path); 
@@ -753,6 +764,7 @@ function hat2(){
 //hat2();
 
 function hat3(){
+	ctx.fillStyle = hatColor;
 	ctx.strokeRect(285,60,130,10);
 	ctx.fillRect(285,60,130,10);
 

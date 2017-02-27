@@ -74,6 +74,115 @@ var no5 = document.getElementById("none5");
 var no6 = document.getElementById("none6");
 var no7 = document.getElementById("none7");
 
+var shirtRed = document.getElementById("radio21");
+var shirtBlue = document.getElementById("radio22");
+var shirtYellow = document.getElementById("radio23");
+var shirtGreen = document.getElementById("radio24");
+var shirtPink = document.getElementById("radio25");
+var shirtPurple = document.getElementById("radio26");
+var shirtOrange = document.getElementById("radio27");
+
+var bottomRed = document.getElementById("radio31");
+var bottomBlue = document.getElementById("radio32");
+var bottomYellow = document.getElementById("radio33");
+var bottomGreen = document.getElementById("radio34");
+var bottomPink = document.getElementById("radio35");
+var bottomPurple = document.getElementById("radio36");
+var bottomOrange = document.getElementById("radio37");
+
+var shoeRed = document.getElementById("radio41");
+var shoeBlue = document.getElementById("radio42");
+var shoeYellow = document.getElementById("radio43");
+var shoeGreen = document.getElementById("radio44");
+var shoePink = document.getElementById("radio45");
+var shoePurple = document.getElementById("radio46");
+var shoeOrange = document.getElementById("radio47");
+
+var hatRed = document.getElementById("radio51");
+var hatBlue = document.getElementById("radio52");
+var hatYellow = document.getElementById("radio53");
+var hatGreen = document.getElementById("radio54");
+var hatPink = document.getElementById("radio55");
+var hatPurple = document.getElementById("radio56");
+var hatOrange = document.getElementById("radio57");
+
+var glassRed = document.getElementById("radio61");
+var glassBlue = document.getElementById("radio62");
+var glassYellow = document.getElementById("radio63");
+var glassGreen = document.getElementById("radio64");
+var glassPink = document.getElementById("radio65");
+var glassPurple = document.getElementById("radio66");
+var glassOrange = document.getElementById("radio67");
+
+var neckRed = document.getElementById("radio71");
+var neckBlue = document.getElementById("radio72");
+var neckYellow = document.getElementById("radio73");
+var neckGreen = document.getElementById("radio74");
+var neckPink = document.getElementById("radio75");
+var neckPurple = document.getElementById("radio76");
+var neckOrange = document.getElementById("radio77");
+
+var braceRed = document.getElementById("radio81");
+var braceBlue = document.getElementById("radio82");
+var braceYellow = document.getElementById("radio83");
+var braceGreen = document.getElementById("radio84");
+var bracePink = document.getElementById("radio85");
+var bracePurple = document.getElementById("radio86");
+var braceOrange = document.getElementById("radio87");
+
+var skin6 = document.getElementById("radio1"); //theses are the buttons
+var skin5 = document.getElementById("radio2");
+var skin4 = document.getElementById("radio3");
+var skin3 = document.getElementById("radio4");
+var skin2 = document.getElementById("radio5");
+var skin1 = document.getElementById("radio6");
+
+var hair1 = document.getElementById("radio11");//buttons - black
+var hair2 = document.getElementById("radio12");//blond
+var hair3 = document.getElementById("radio13");//light brown
+var hair4 = document.getElementById("radio14");//dark brown
+var hair5 = document.getElementById("radio15"); //gray
+
+var red = "#FF0000";
+var blue ="#0033CC";
+var yellow ="#FFFF00";
+var green = "#00FF00";
+var pink = "#FF6699";
+var purple = "#8F00B3";
+var orange ="#FF9933";
+
+var hairBlack = "black";
+var hairBlond = "#e6b800";
+var hairLtBrown = "#b38600";
+var hairdBrown = "#663300";
+var hairGray = "d1cdc8";
+
+var bottomColor;
+var hatColor;
+var shirtColor;
+var shoeColor;
+var glassColor;
+var braceColor;
+var necklaceColor;
+var hairColor;
+var skinColor1 = "FFDBAC";
+var skinColor2 = "F1C27D";
+var skinColor3 = "E0AC69";
+var skinColor4 = "C68642";
+var skinColor5 = "#8D5524";
+var skinColor6 = "#573719";
+
+var skinColor;
+
+var accentSkin1 = "F1C27D";
+var accentSkin2 = "E0AC69";
+var accentSkin3 = "C68642";
+var accentskin4 = "#8D5524";
+var accentSkin5 = "black"; //this should be adjusted
+
+var accentSkin;
+
+
 	//Background
 
 	if (b1.checked == true){
@@ -113,6 +222,7 @@ var no7 = document.getElementById("none7");
 	}
 
 	//Shirts
+
 	if(s1.checked == true){
 		curveshort();
 	}

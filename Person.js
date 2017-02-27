@@ -9,6 +9,7 @@ var skinColor5 = "#8D5524";
 var skinColor6 = "#573719";
 
 
+
 //this variable represents the the color that the user actually
 //choses from the options above
 var skinColor;
