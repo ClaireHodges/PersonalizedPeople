@@ -79,7 +79,7 @@ function curvedshirt(){
 
 }
 
-//curvedshirt();
+curvedshirt();
 
 function shortsleeve(){
 	var path = new Path2D;
@@ -99,6 +99,7 @@ function shortsleeve(){
 
 function longsleeve(){
 	var path = new Path2D;
+	ctx.fillStyle = "#000000"
 	path.moveTo(300,120);
 	path.lineTo(350,150);
 	path.lineTo(175,250); //ll
@@ -389,15 +390,15 @@ function glasses4(){
 
 function hp(){
 	var path = new Path2D;
-	path.moveTo(330,50);
-	path.lineTo(327,60);
-	path.lineTo(335,55);
-	path.lineTo(331,67);
+	path.moveTo(340,65);
+	path.lineTo(337,75);
+	path.lineTo(345,70);
+	path.lineTo(341,82);
 	ctx.stroke(path);
 
 }
 
-//hp();
+hp();
 
 
 function hat6(){
@@ -449,15 +450,91 @@ function hat4(){
 
 hat4();
 
-function bracelet1(){
-	fillStyle = "#FFFFFF"
+function bracelet4(){
+	ctx.fillStyle = "#FF0000"
 	var path = new Path2D;
-	path.moveTo(510,240);
-	path.lineTo(520,220);
-	ctx.stroke(path);
+	path.moveTo(515,237);
+	path.lineTo(528,213);
+	path.lineTo(534,217);
+	path.lineTo(521,240);
+	ctx.fill(path);
 }
 
-//bracelet1();
+//bracelet2();
+
+function bracelet5(){
+	ctx.fillStyle = "#FF0000"
+	var path = new Path2D;
+	path.moveTo(517,241);
+	path.arc(517,238,5,0*Math.PI,2*Math.PI);
+	path.moveTo(521,232);
+	path.arc(521,232,5,0*Math.PI,2*Math.PI);
+	path.moveTo(525,226);
+	path.arc(525,226,5,0*Math.PI,2*Math.PI);
+	path.moveTo(529,220);
+	path.arc(529,220,5,0*Math.PI,2*Math.PI);
+	path.moveTo(533,214);
+	path.arc(533,214,5,0*Math.PI,2*Math.PI);
+	ctx.fill(path);
+}
+
+//bracelet3();
+
+function necklace5(){
+	ctx.fillStyle = "#FF0000"
+	var path = new Path2D;
+	path.moveTo(331,131);
+	path.arc(331,131,5,0*Math.PI,2*Math.PI);
+	path.moveTo(336,137);
+	path.arc(336,137,5,0*Math.PI,2*Math.PI);
+	path.moveTo(343,142);
+	path.arc(343,142,5,0*Math.PI,2*Math.PI);
+	path.moveTo(350,143);
+	path.arc(350,143,5,0*Math.PI,2*Math.PI);
+	path.moveTo(357,142);
+	path.arc(357,142,5,0*Math.PI,2*Math.PI);
+	path.moveTo(364,137);
+	path.arc(364,137,5,0*Math.PI,2*Math.PI);
+	path.moveTo(369,131);
+	path.arc(369,131,5,0*Math.PI,2*Math.PI);
+	ctx.fill(path);
+}
+
+//necklace5();
+
+function necklace4(){
+	ctx.fillStyle = "#FF0000";
+	var path = new Path2D;
+	path.moveTo(325,131);
+	path.lineTo(350,150);
+	path.lineTo(375,131);
+	ctx.stroke(path);
+
+	var path = new Path2D;
+	path.moveTo(350,154);
+	path.arc(350,154,5,0*Math.PI,2*Math.PI);
+	ctx.fill(path);
+}
+
+necklace4();
+
+function necklace6(){
+	ctx.fillStyle = "#FF0000"
+	var path = new Path2D;
+	path.moveTo(325,131);
+	path.lineTo(350,150);
+	path.lineTo(375,131);
+	ctx.stroke(path);
+
+	var path =new Path2D;
+	path.moveTo(350,150);
+	path.lineTo(353,153);
+	path.lineTo(350,156);
+	path.lineTo(347,153);
+	ctx.fill(path);
+}
+
+//necklace6();
 
 function sHair(){
 	var path = new Path2D();
@@ -680,15 +757,6 @@ function hat3(){
 
 //hat3();
 
-function bracelet1(){
-	fillStyle = "#FFFFFF"
-	var path = new Path2D;
-	path.moveTo(510,240);
-	path.lineTo(520,220);
-	ctx.stroke(path);
-}
-
-//bracelet1();
 
 
 

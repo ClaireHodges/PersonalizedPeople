@@ -59,11 +59,20 @@ var b4 = document.getElementById("b4");
 var b5 = document.getElementById("b5");
 var b6 = document.getElementById("b6");
 
+var necklace1 = document.getElementById("necklace1");
+var necklace2 = document.getElementById("necklace2");
+var necklace3 = document.getElementById("necklace3");
+
+var bracelet1 = document.getElementById("bracelet1");
+var bracelet2 = document.getElementById("bracelet2");
+
 var no1 = document.getElementById("none1");
 var no2 = document.getElementById("none2");
 var no3 = document.getElementById("none3");
 var no4 = document.getElementById("none4");
 var no5 = document.getElementById("none5");
+var no6 = document.getElementById("none6");
+var no7 = document.getElementById("none7");
 
 	//Background
 
@@ -242,6 +251,19 @@ var no5 = document.getElementById("none5");
 		 
 	}
 
+	//Necklace
+	if (necklace1.checked == true){
+		necklace5();
+	}
+	else if(necklace2.checked == true){
+		necklace4(); 
+	}
+	else if(necklace3.checked == true){
+		necklace6(); 
+	}
+	else{
+		none(); 
+	}
 
 	//Shoes
 	if (shoes1.checked == true){
@@ -259,18 +281,27 @@ var no5 = document.getElementById("none5");
 		 
 	}
 	else{
-		shoes5();
-		 
+		shoes5();	 
 	}
+
+	
+	//Bracelet
+	if (bracelet1.checked == true){
+		bracelet4();
+	}
+	else if(bracelet2.checked == true){
+		bracelet5(); 
+	}
+	else{
+		none(); 
+	}
+
 }
 
-
-
-/*
-Test...
-hair not working
-white fill on glasses
-white fill on sleeves in tri shirt
-
-*/
-
+var button = document.getElementById('btn-download');
+button.addEventListener('click', function (e) {
+	var canvas1 = document.getElementById("canvas")
+    var dataURL = canvas1.toDataURL('image/png');
+    button.href = dataURL;
+});
+//not listening to function at all. why??
