@@ -8,9 +8,8 @@ var ctx = canvas.getContext("2d");
 //array= [body,hair, hats, scar, eyes, glasses, nose, shirts, bottoms, shoes, background]
 
 function check(){
-		ctx.fillStyle = "#FFFFFF"
+	ctx.fillStyle = "#FFFFFF"
 	ctx.fillRect(0,0,750,500);
-var draw = [];
 //draws over pre-set functions, without erasing. Include in if statements instead?
 //variable list
 var h1 = document.getElementById("h1");//hair
@@ -60,122 +59,109 @@ var b4 = document.getElementById("b4");
 var b5 = document.getElementById("b5");
 var b6 = document.getElementById("b6");
 
+var necklace1 = document.getElementById("necklace1");
+var necklace2 = document.getElementById("necklace2");
+var necklace3 = document.getElementById("necklace3");
+
+var bracelet1 = document.getElementById("bracelet1");
+var bracelet2 = document.getElementById("bracelet2");
+
 var no1 = document.getElementById("none1");
 var no2 = document.getElementById("none2");
 var no3 = document.getElementById("none3");
 var no4 = document.getElementById("none4");
 var no5 = document.getElementById("none5");
+var no6 = document.getElementById("none6");
+var no7 = document.getElementById("none7");
 
 	//Background
+
 	if (b1.checked == true){
 		background1();
-		h2.checked = true;
 	}
 	else if(b2.checked == true){
 		background2();
-		h2.checked = true;
 	}
 	else if(b3.checked == true){
 		background3();
-		h2.checked = true;
 	}
 	else if(b4.checked == true){
 		background4();
-		h2.checked = true;
 	}
 	else if (b5.checked == true){
 		background5();
-		h2.checked = true;
 	}
 	else if(b6.checked == true){
 		background6();
-		h2.checked = true;
 	}
 	else if (no5.checked == true){
 		none();
-		h2.checked = true;
 	}
 	else{
 		none();
-		h2.checked = true;
 	}
 	//background draws in front of person. REORDER ARRAY
+	body();
+
+	//Scar
+	//can't see well with hair
+	if(scar1.checked == true){
+		hp();
+	}
+	else if(no3.checked == true){
+		none();
+	}
 
 	//Shirts
 	if(s1.checked == true){
 		curveshort();
-		h2.checked = true;
 	}
 	else if(s2.checked == true){
 		curvelong();
-		h2.checked = true;
 	}
 	//arms don't align to sleeves
 
 	else if (s3.checked == true){
 		trishort();
-		h2.checked = true;
 	}
 	else if(s4.checked == true){
 		trilong();
-		h2.checked = true;
 	}
 	else{
 		curveshort();
-		h2.checked = true;
 	}
 
 	//HAIR
 	if (h1.checked == true){
 		sHair();
-		h2.checked = true;
 
 	}
 	else if(h2.checked == true){
 		mHair();
-		h1.checked = true;
 	}
 	else if(h3.checked == true){
 		lHair();
-		h2.checked = true;
 	}
 	else if(h4.checked == true){
 		baldoHair();
-		h2.checked = true;
 	}
 	else if(no1.checked == true){
 		none();
-		h2.checked = true;
 	}
 	
 
 	//HAT
 	if (hat1.checked == true){
 		hat6();
-		h2.checked = true;
 	}
 	else if(hat2.checked == true){
 		hat5();
-		h2.checked = true;
 	}
 	else if(hat3.checked == true){
 		hat4();
-		h2.checked = true;
 	}
 	else if(no2.checked == true){
 		none();
-		h2.checked = true;
-	}
-
-	//Scar
-	//can't see well with hair
-	if(scar1.checked == true){
-		hp();
-		h2.checked = true;
-	}
-	else if(no3.checked == true){
-		draw[4] = none();
-		h2.checked = true;
 	}
 
 	
@@ -183,134 +169,139 @@ var no5 = document.getElementById("none5");
 	//incomplete open eyes
 	if (e1.checked == true){
 		close();
-		h2.checked = true;
 	}
 	else if(e2.checked == true){
 		open();
-		h2.checked = true;
 	}
 	else if(e3.checked == true){
 		closedEyelash();
-		h2.checked = true;
 	}
 	else if(e4.checked == true){
 		openEyelash();
-		h2.checked = true;
 	}
 	else{
 		close();
-		h2.checked = true;
 	}
 
 	//Glasses
 	if (g1.checked == true){
 		glasses1();
-		h2.checked = true;
 	}
 	else if(g2.checked == true){
 		glasses2();
-		h2.checked = true;
 	}
 	else if(g3.checked == true){
 		glasses3();
-		h2.checked = true;
+		
 	}
 	else if(g4.checked == true){
 		glasses4();
-		h2.checked = true;
+		 
 	}
 	else if(no4.checked == true){
 		none();
-		h2.checked = true;
+		 
 	}
 
 	//Nose
 	if (n1.checked == true){
 		dftNose();
-		h2.checked = true;
+		 
 	}
 	else if(n2.checked == true){
 		roundNose();
-		h2.checked = true;
+		 
 	}
 	else{
 		roundNose();
-		h2.checked = true;
+		 
 	}
 
 	//Bottoms
 	if(p1.checked == true){
 		pants1();
-		h2.checked = true;
+		 
 	}
 	else if(p2.checked == true){
 		shorts1();
-		h2.checked = true;
+		 
 	}
 	else if (p3.checked == true){
 		shorts2();
-		h2.checked = true;
+		 
 	}
 	else if(p4.checked == true){
 		skirt1();
-		h2.checked = true;
+		 
 	}
 	else if(p5.checked == true){
 		skirt2();
-		h2.checked = true;
+		 
 	}
 	else if(p6.checked == true){
 		if(shoes3.checked == true){
 			boots();
 		}
 		skirt3();
-		h2.checked = true;
+		 
 	}
 	else{
 		pants1();
 		none();
-		h2.checked = true;
+		 
 	}
 
+	//Necklace
+	if (necklace1.checked == true){
+		necklace5();
+	}
+	else if(necklace2.checked == true){
+		necklace4(); 
+	}
+	else if(necklace3.checked == true){
+		necklace6(); 
+	}
+	else{
+		none(); 
+	}
 
 	//Shoes
 	if (shoes1.checked == true){
 		shoes5();
-		h2.checked = true;
+		 
 	}
 	else if(shoes2.checked == true){
 		shoes4();
-		h2.checked = true;
+		 
 	}
 	else if(shoes3.checked == true){
-		if(p6 != true){
+		if(p6.checked == false){
 			boots();
 		}
-		h2.checked = true;
+		 
 	}
 	else{
-		shoes5();
-		h2.checked = true;
+		shoes5();	 
 	}
-	//these draw over the skirt. Reorder array list!!! Have to have seperate skirt and pants order
-	//because boots need to draw over pants and under skirt
 
-
-	//run through array
-	//for (i = 0; i =11; i++) {
-    //draw[i]();
-	//}
+	
+	//Bracelet
+	if (bracelet1.checked == true){
+		bracelet4();
+	}
+	else if(bracelet2.checked == true){
+		bracelet5(); 
+	}
+	else{
+		none(); 
+	}
 
 }
-//document.getElementById("canvas").draw[1];
 
-
-
-/*
-Test...
-hair not working
-white fill on glasses
-white fill on sleeves in tri shirt
-
-*/
-
+var button = document.getElementById('btn-download');
+button.addEventListener('click', function (e) {
+	var canvas1 = document.getElementById("canvas")
+    var dataURL = canvas1.toDataURL('image/png');
+    button.href = dataURL;
+});
+//not listening to function at all. why??

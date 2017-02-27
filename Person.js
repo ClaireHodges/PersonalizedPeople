@@ -6,6 +6,7 @@ var skinColor2 = "F1C27D";
 var skinColor3 = "E0AC69";
 var skinColor4 = "C68642";
 var skinColor5 = "#8D5524";
+var skinColor6 = "#573719";
 
 
 //this variable represents the the color that the user actually
@@ -122,7 +123,7 @@ function closedLEye(){
 
 }
 
-closedLEye();
+//closedLEye();
 
 function closedREye(){ 
 	ctx.fillStyle = accentSkin;
@@ -130,33 +131,54 @@ function closedREye(){
 	ctx.arc(370, 77, 10, 45*Math.PI/180, 135 * Math.PI/180);
 	ctx.stroke();
 }
-closedREye();
+//closedREye();
 
 function openREye(){
 	ctx.fillStyle = accentSkin;
-	//arcs
+	//lower eye
 	ctx.beginPath();
-	ctx.arc(370, 77, 10, 45*Math.PI/180, 135 * Math.PI/180);
+	ctx.arc(370, 77, 10, 30*Math.PI/180, 135 * Math.PI/155);
 	ctx.stroke();
+	//upper eye
 	ctx.beginPath();
-	ctx.arc(370, 87, 10, 225*Math.PI/180, 315*Math.PI/180);
+	ctx.arc(370, 87, 10, 205*Math.PI/180, 330*Math.PI/180);
 	ctx.stroke();
-	//ends
-	var path = new Path2D();
-	path.moveTo(377, 79);
-	path.lineTo(379, 82);
-	path.moveTo(377, 84);
-	path.lineTo(379, 82);
-	ctx.stroke(path);
-
-	//circles
+	//iris
 	ctx.beginPath();
-	ctx.arc(371, 80, 3, 0, Math.PI/2);
+	ctx.arc(370, 82, 4, 0*Math.PI, 2*Math.PI);
 	ctx.stroke();
+	//pupil
+	ctx.fillStyle = "#000000"
+	ctx.beginPath();
+	ctx.arc(370,82,2,0*Math.PI, 2*Math.PI);
+	ctx.fill();
 
 
 }
-//openREye();
+openREye();
+
+function openLEye(){
+	ctx.fillStyle = accentSkin;
+	//lower eye
+	ctx.beginPath();
+	ctx.arc(330, 77, 10, 30*Math.PI/180, 135 * Math.PI/155);
+	ctx.stroke();
+	//upper eye
+	ctx.beginPath();
+	ctx.arc(330, 87, 10, 205*Math.PI/180, 330*Math.PI/180);
+	ctx.stroke();
+	//iris
+	ctx.beginPath();
+	ctx.arc(330, 82, 4, 0*Math.PI, 2*Math.PI);
+	ctx.stroke();
+	//pupil
+	ctx.fillStyle = "#000000"
+	ctx.beginPath();
+	ctx.arc(330,82,2,0*Math.PI, 2*Math.PI);
+	ctx.fill();
+}
+
+openLEye();
 
 function clREyelash(){
 	ctx.fillStyle = accentSkin;
@@ -178,7 +200,7 @@ function clREyelash(){
 
 	ctx.stroke(path);
 }
-clREyelash();
+//clREyelash();
 function clLEyelash(){
 	ctx.fillStyle = accentSkin;
 	var path = new Path2D();
@@ -198,7 +220,50 @@ function clLEyelash(){
 	path.lineTo(360,87);
 	ctx.stroke(path);
 }
-clLEyelash();
+
+function openLEyelash(){
+	ctx.fillStyle = accentSkin;
+	var path = new Path2D();
+	path.moveTo(377,80);
+	path.lineTo(380,77);
+
+	path.moveTo(373.5, 78); 
+	path.lineTo(375.5, 75);
+
+	path.moveTo(370, 78);
+	path.lineTo(370, 74);
+
+	path.moveTo(366.5, 78);
+	path.lineTo(364.5, 75);
+	
+	path.moveTo(363, 80);
+	path.lineTo(360,77);
+	ctx.stroke(path);
+}
+openLEyelash();
+
+function openREyelash(){
+	ctx.fillStyle = accentSkin;
+	var path = new Path2D();
+	path.moveTo(323,80);
+	path.lineTo(320,77);
+
+	path.moveTo(326.5, 78); 
+	path.lineTo(324.5, 75);
+
+	path.moveTo(330, 78);
+	path.lineTo(330, 74);
+
+	path.moveTo(333.5, 78);
+	path.lineTo(335.5, 75);
+	
+	path.moveTo(337, 80);
+	path.lineTo(340,77);
+	ctx.stroke(path);
+}
+openREyelash();
+
+//clLEyelash();
 
 // function oREyelash(){
 // 	ctx.fillStyle = accentSkin;
@@ -246,6 +311,9 @@ function closedEyelash(){
 
 function openEyelash(){
 	openREye();
+	openLEye();
+	openLEyelash();
+	openREyelash();
 }
 
 function close(){
@@ -255,6 +323,7 @@ function close(){
 
 function open(){
 	openREye();
+	openLEye();
 }
 
 function LArm(){
@@ -262,8 +331,8 @@ function LArm(){
 	var path = new Path2D;
 	path.moveTo(289,141);
 	path.lineTo(350,143);
-	path.lineTo(175,250); //ll
-	path.lineTo(157,227);
+	path.lineTo(170,245); //ll
+	path.lineTo(150,227);
 	ctx.fill(path);
 }
 
@@ -274,10 +343,10 @@ function RArm(){
 	var path = new Path2D;
 	ctx.fillStyle = skinColor;
 
-	path.moveTo(410,141);
-	path.lineTo(350,145);
-	path.lineTo(525,250); //lr
-	path.lineTo(539,227); //t
+	path.moveTo(410,141); // shoulder top
+	path.lineTo(350,145); // armpit
+	path.lineTo(530,245); //inner wrist
+	path.lineTo(550,227); //outer wrist
 	ctx.fill(path);
 	
 }
@@ -303,7 +372,7 @@ legs();
 function RHand(){
 	ctx.fillStyle = skinColor;
 	ctx.beginPath();
-	ctx.arc(533, 238.5, 18, 0, 2*Math.PI);
+	ctx.arc(547, 241, 18, 0, 2*Math.PI);
 	ctx.closePath();
 	ctx.fill();
 }
@@ -312,7 +381,7 @@ RHand();
 function LHand(){
 	ctx.fillStyle = skinColor;
 	ctx.beginPath();
-	ctx.arc(164, 238.5, 18, 0, 2*Math.PI);
+	ctx.arc(153, 241, 18, 0, 2*Math.PI);
 	ctx.closePath();
 	ctx.fill();
 }
