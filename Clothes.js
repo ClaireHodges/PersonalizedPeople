@@ -9,7 +9,16 @@ var pink = "#FF6699";
 var purple = "#8F00B3";
 var orange ="#FF9933";
 
-var clothColor; //will be set to one of the above
+//clothing variables that will be set to one of the above
+var bottomColor;
+var hatColor;
+var shirtColor;
+var shoeColor;
+var glassColor;
+var braceColor;
+
+
+
 
 //hair color options
 var hairBlack = "black";
@@ -21,20 +30,20 @@ var hairGray = "gray";
 var hairColor; //value the user chooses
 hairColor = hairBlond; //this is just for testing
 
-function legs(){
-	ctx.fillStyle = "#FFFF00";
-	var path = new Path2D;
-	path.moveTo(300,300);
+// function legs(){
+// 	ctx.fillStyle = skinColor;
+// 	var path = new Path2D;
+// 	path.moveTo(300,300);
 
-	path.lineTo(275,450);
-	path.lineTo(310,450);
-	path.lineTo(350,330);
+// 	path.lineTo(275,450);
+// 	path.lineTo(310,450);
+// 	path.lineTo(350,330);
 
-	path.lineTo(390,450);
-	path.lineTo(425,450);
-	path.lineTo(400,300);
-	ctx.fill(path);
-}
+// 	path.lineTo(390,450);
+// 	path.lineTo(425,450);
+// 	path.lineTo(400,300);
+// 	ctx.fill(path);
+// }
 
 //legs();
 
@@ -99,6 +108,7 @@ function shortsleeve(){
 
 function longsleeve(){
 	var path = new Path2D;
+	
 	path.moveTo(300,120);
 	path.lineTo(350,150);
 	path.lineTo(175,250); //ll
@@ -111,7 +121,7 @@ function longsleeve(){
 	ctx.fill(path);
 }
 
-//longsleeve();
+longsleeve();
 
 function trilong(){
 	longsleeve();
@@ -134,7 +144,7 @@ function curveshort(){
 }
 
 function pants1(){
-	ctx.fillStyle = "#FFFF00";
+	ctx.fillStyle = bottomColor;
 	var path = new Path2D;
 	path.moveTo(300,300);
 

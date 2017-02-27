@@ -284,9 +284,22 @@ function RArm(){
 
 RArm();
 
-function dftLLeg(){
+function legs(){
+	ctx.fillStyle = skinColor;
+	var path = new Path2D;
+	path.moveTo(300,300);
 
+	path.lineTo(275,450);
+	path.lineTo(310,450);
+	path.lineTo(350,330);
+
+	path.lineTo(390,450);
+	path.lineTo(425,450);
+	path.lineTo(400,300);
+	ctx.fill(path);
 }
+
+legs();
 function RHand(){
 	ctx.fillStyle = skinColor;
 	ctx.beginPath();
@@ -304,20 +317,6 @@ function LHand(){
 	ctx.fill();
 }
 LHand();
-
-//the hair that goes behind the head for filling purposes only
-// function hairBehind(){
-// 	ctx.fillStyle = hairColor;
-// 	var path = new Path2D();
-// 	path.moveTo(300, 84);
-// 	path.lineTo(305, 82);
-// 	path.lineTo(395, 82);
-// 	path.lineTo(400, 84);
-// 	path.lineTo(400, 120);
-// 	path.lineTo(300, 120);
-// 	ctx.fill(path);
-// }
-// hairBehind();
 
 function body(){
 	LHand();
