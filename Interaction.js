@@ -222,7 +222,18 @@ var accentSkin;
 	}
 
 	//Shirts
-
+	if(shirtRed.checked == true){
+		shirtColor = red;
+	}
+	if(shirtOrange.checked == true){
+		shirtColor = orange;
+	}
+	if(shirtPurple.checked == true){
+		shirtColor = purple;
+	}
+	if(shirtPink.checked == true){
+		shirtColor = pink;
+	}
 	if(s1.checked == true){
 		curveshort();
 	}
