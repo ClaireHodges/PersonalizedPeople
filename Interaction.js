@@ -254,6 +254,7 @@ var accentSkin;
 
 	//HAIR
 	if (h1.checked == true){
+		fillStyle = "#000000";
 		sHair();
 
 	}
