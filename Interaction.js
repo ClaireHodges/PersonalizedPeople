@@ -7,9 +7,6 @@ var ctx = canvas.getContext("2d");
 //}
 //array= [body,hair, hats, scar, eyes, glasses, nose, shirts, bottoms, shoes, background]
 
-function check(){
-	ctx.fillStyle = "#FFFFFF"
-	ctx.fillRect(0,0,750,500);
 //draws over pre-set functions, without erasing. Include in if statements instead?
 //variable list
 var h1 = document.getElementById("h1");//hair
@@ -172,7 +169,7 @@ var skinColor4 = "C68642";
 var skinColor5 = "#8D5524";
 var skinColor6 = "#573719";
 
-var skinColor;
+skinColor = "black";
 
 var accentSkin1 = "F1C27D";
 var accentSkin2 = "E0AC69";
@@ -181,6 +178,12 @@ var accentskin4 = "#8D5524";
 var accentSkin5 = "black"; //this should be adjusted
 
 var accentSkin;
+
+function check(){
+	ctx.fillStyle = "#FFFFFF";
+	ctx.fillRect(0,0,750,500);
+
+
 
 
 	//Background
@@ -222,8 +225,8 @@ var accentSkin;
 	}
 
 	//Shirts
-	if(shirtRed.checked == true){
-		shirtColor = red;
+	if(shirtRed.checked == true){ //red orange yellow green blue purple pink
+		shirtColor= red;
 	}
 	if(shirtOrange.checked == true){
 		shirtColor = orange;
@@ -234,6 +237,17 @@ var accentSkin;
 	if(shirtPink.checked == true){
 		shirtColor = pink;
 	}
+	if(shirtYellow.checked == true){
+		shirtColor = yellow;
+	}
+	if(shirtGreen.checked == true){
+		shirtColor = green;
+	}
+	if(shirtBlue.checked == true){
+		shirtColor = blue;
+	}
+	
+	
 	if(s1.checked == true){
 		curveshort();
 	}
@@ -272,6 +286,27 @@ var accentSkin;
 	
 
 	//HAT
+	// if(hatRed.checked == true){ //red orange yellow green blue purple pink
+	// 	hatColor= red;
+	// }
+	// if(hatOrange.checked == true){
+	// 	hatColor = orange;
+	// }
+	// if(hatPurple.checked == true){
+	// 	hatColor = purple;
+	// }
+	// if(hatPink.checked == true){
+	// 	hatColor = pink;
+	// }
+	// if(hatYellow.checked == true){
+	// 	hatColor = yellow;
+	// }
+	// if(hatGreen.checked == true){
+	// 	hatColor = green;
+	// }
+	// if(hatBlue.checked == true){
+	// 	hatColor = blue;
+	// }
 	if (hat1.checked == true){
 		hat6();
 	}
