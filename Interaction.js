@@ -228,23 +228,26 @@ function check(){
 	if(shirtRed.checked == true){ //red orange yellow green blue purple pink
 		shirtColor= red;
 	}
-	if(shirtOrange.checked == true){
+	else if(shirtOrange.checked == true){
 		shirtColor = orange;
 	}
-	if(shirtPurple.checked == true){
+	else if(shirtPurple.checked == true){
 		shirtColor = purple;
 	}
-	if(shirtPink.checked == true){
+	else if(shirtPink.checked == true){
 		shirtColor = pink;
 	}
-	if(shirtYellow.checked == true){
+	else if(shirtYellow.checked == true){
 		shirtColor = yellow;
 	}
-	if(shirtGreen.checked == true){
+	else if(shirtGreen.checked == true){
 		shirtColor = green;
 	}
-	if(shirtBlue.checked == true){
+	else if(shirtBlue.checked == true){
 		shirtColor = blue;
+	}
+	else {
+		shirtColor = green;
 	}
 	
 	
@@ -267,6 +270,24 @@ function check(){
 	}
 
 	//HAIR
+	if(hair1.checked == true){
+		hairColor = black;
+	}
+	else if(hair2.checked == true){
+		hairColor = blond;
+	}
+	else if(hair3.checked == true){
+		hairColor = hairLtBrown;
+	}
+	else if(hair4.checked == true){
+		hairColor = hairdBrown;
+	}
+	else if(hair5.checked == true){
+		hairColor = hairGray;
+	}
+	else{
+		hairColor = hairdBrown;
+	}
 	if (h1.checked == true){
 		sHair();
 
@@ -340,6 +361,27 @@ function check(){
 	}
 
 	//Glasses
+	if(glassRed.checked == true){ //red orange yellow green blue purple pink
+		glassColor= red;
+	}
+	else if(glassOrange.checked == true){
+		glassColor = orange;
+	}
+	else if(glassPurple.checked == true){
+		glassColor = purple;
+	}
+	else if(glassPink.checked == true){
+		glassColor = pink;
+	}
+	else if(glassYellow.checked == true){
+		glassColor = yellow;
+	}
+	else if(glassGreen.checked == true){
+		glassColor = green;
+	}
+	else if(glassBlue.checked == true){
+		glassColor = blue;
+	}
 	if (g1.checked == true){
 		glasses1();
 	}
@@ -374,6 +416,27 @@ function check(){
 	}
 
 	//Bottoms
+	if(bottomRed.checked == true){ //red orange yellow green blue purple pink
+		bottomColor= red;
+	}
+	else if(bottomOrange.checked == true){
+		bottomColor = orange;
+	}
+	else if(bottomPurple.checked == true){
+		bottomColor = purple;
+	}
+	else if(bottomPink.checked == true){
+		bottomColor = pink;
+	}
+	else if(bottomYellow.checked == true){
+		bottomColor = yellow;
+	}
+	else if(bottomGreen.checked == true){
+		bottomColor = green;
+	}
+	else if(bottomBlue.checked == true){
+		bottomColor = blue;
+	}
 	if(p1.checked == true){
 		pants1();
 		 
@@ -422,6 +485,27 @@ function check(){
 	}
 
 	//Shoes
+	if(shoeRed.checked == true){ //red orange yellow green blue purple pink
+		shoeColor= red;
+	}
+	else if(shoeOrange.checked == true){
+		shoeColor = orange;
+	}
+	else if(shoePurple.checked == true){
+		shoeColor = purple;
+	}
+	else if(shoePink.checked == true){
+		shoeColor = pink;
+	}
+	else if(shoeYellow.checked == true){
+		shoeColor = yellow;
+	}
+	else if(shoeGreen.checked == true){
+		shoeColor = green;
+	}
+	else if(shoeBlue.checked == true){
+		shoeColor = blue;
+	}
 	if (shoes1.checked == true){
 		shoes5();
 		 
