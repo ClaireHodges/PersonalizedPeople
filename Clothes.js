@@ -106,7 +106,7 @@ function shortsleeve(){
 	ctx.fill(path);
 }
 
-//shortsleeve();
+shortsleeve();
 
 function longsleeve(){
 	var path = new Path2D;//add fill style
@@ -123,7 +123,7 @@ function longsleeve(){
 	ctx.fill(path);
 }
 
-longsleeve();
+//longsleeve();
 
 function trilong(){
 	longsleeve();
@@ -256,7 +256,7 @@ function shoes5(){
 	ctx.fill(path);
 	
 }
-//shoes5();
+shoes5();
 
 function shoes4(){
 	ctx.fillStyle = shoeColor;
@@ -414,7 +414,7 @@ function hp(){
 
 }
 
-hp();
+//hp();
 
 
 function hat6(){
@@ -439,7 +439,6 @@ function hat5(){
 	ctx.fill(path); 
 
 	ctx.fillRect(305,60,90,10);
-	fillStyle = "#FFFFFF";
 	ctx.strokeRect(305,60,10,10);
 	ctx.strokeRect(315,60,10,10);
 	ctx.strokeRect(325,60,10,10);
@@ -466,7 +465,7 @@ function hat4(){
 	ctx.fill(path);
 }
 
-hat4();
+//hat4();
 
 function bracelet4(){
 	ctx.fillStyle = braceColor;
@@ -534,7 +533,7 @@ function necklace4(){
 	ctx.fill(path);
 }
 
-necklace4();
+//necklace4();
 
 function necklace6(){
 	ctx.fillStyle = necklaceColor;
@@ -659,7 +658,7 @@ function lHair(){
 
 }
 
-lHair();
+//lHair();
 function baldoHair(){
 	ctx.fillStyle = hairColor; 
 	var path = new Path2D();

@@ -14,9 +14,9 @@ var h2 = document.getElementById("h2");
 var h3 = document.getElementById("h3");
 var h4 = document.getElementById("h4");
 
-var hat1 = document.getElementById("hat1");
-var hat2 = document.getElementById("hat2");
-var hat3 = document.getElementById("hat3");
+var hat20 = document.getElementById("hat1");
+var hat21 = document.getElementById("hat2");
+var hat22 = document.getElementById("hat3");
 
 var scar1 = document.getElementById("scar1");
 
@@ -169,7 +169,7 @@ var skinColor4 = "C68642";
 var skinColor5 = "#8D5524";
 var skinColor6 = "#573719";
 
-skinColor = "black";
+skinColor = "red";
 
 var accentSkin1 = "F1C27D";
 var accentSkin2 = "E0AC69";
@@ -228,23 +228,26 @@ function check(){
 	if(shirtRed.checked == true){ //red orange yellow green blue purple pink
 		shirtColor= red;
 	}
-	if(shirtOrange.checked == true){
+	else if(shirtOrange.checked == true){
 		shirtColor = orange;
 	}
-	if(shirtPurple.checked == true){
+	else if(shirtPurple.checked == true){
 		shirtColor = purple;
 	}
-	if(shirtPink.checked == true){
+	else if(shirtPink.checked == true){
 		shirtColor = pink;
 	}
-	if(shirtYellow.checked == true){
+	else if(shirtYellow.checked == true){
 		shirtColor = yellow;
 	}
-	if(shirtGreen.checked == true){
+	else if(shirtGreen.checked == true){
 		shirtColor = green;
 	}
-	if(shirtBlue.checked == true){
+	else if(shirtBlue.checked == true){
 		shirtColor = blue;
+	}
+	else{
+		shirtColor = green;
 	}
 	
 	
@@ -284,37 +287,37 @@ function check(){
 	else if(no1.checked == true){
 		none();
 	}
-	
 
 	//HAT
-	// if(hatRed.checked == true){ //red orange yellow green blue purple pink
-	// 	hatColor= red;
-	// }
-	// if(hatOrange.checked == true){
-	// 	hatColor = orange;
-	// }
-	// if(hatPurple.checked == true){
-	// 	hatColor = purple;
-	// }
-	// if(hatPink.checked == true){
-	// 	hatColor = pink;
-	// }
-	// if(hatYellow.checked == true){
-	// 	hatColor = yellow;
-	// }
-	// if(hatGreen.checked == true){
-	// 	hatColor = green;
-	// }
-	// if(hatBlue.checked == true){
-	// 	hatColor = blue;
-	// }
-	if (hat1.checked == true){
+	if(hatRed.checked == true){ //red orange yellow green blue purple pink
+		hatColor= red;
+	}
+	if(hatOrange.checked == true){
+		hatColor = orange;
+	}
+	if(hatPurple.checked == true){
+		hatColor = purple;
+	}
+	if(hatPink.checked == true){
+		hatColor = pink;
+	}
+	if(hatYellow.checked == true){
+		hatColor = yellow;
+	}
+	if(hatGreen.checked == true){
+		hatColor = green;
+	}
+	if(hatBlue.checked == true){
+		hatColor = blue;
+	}
+
+	if (hat20.checked == true){
 		hat6();
 	}
-	else if(hat2.checked == true){
+	else if(hat21.checked == true){
 		hat5();
 	}
-	else if(hat3.checked == true){
+	else if(hat22.checked == true){
 		hat4();
 	}
 	else if(no2.checked == true){
@@ -453,12 +456,14 @@ function check(){
 		none(); 
 	}
 
+	dftMouth();
+
 }
 
-var button = document.getElementById('btn-download');
-button.addEventListener('click', function (e) {
-	var canvas1 = document.getElementById("canvas")
-    var dataURL = canvas1.toDataURL('image/png');
-    button.href = dataURL;
-});
+// var button = document.getElementById('btn-download');
+// button.addEventListener('click', function (e) {
+// 	var canvas1 = document.getElementById("canvas")
+//     var dataURL = canvas1.toDataURL('image/png');
+//     button.href = dataURL;
+//});
 //not listening to function at all. why??

@@ -1,13 +1,13 @@
 var canvas = document.getElementById("canvas");
 
-function showCoords(){
-	var x = event.clientX - canvas.offsetLeft;
-	var y = event.clientY - canvas.offsetTop;
-	//var x = event.clientX -8;
-	//var y = event.clientY -8;//relative to the frame it's inside of
-	var coords = "X coords: " + x + " , Y coords: " + y;
-	document.getElementById("coordinates").innerHTML = coords;
-}
+// function showCoords(){
+// 	var x = event.clientX - canvas.offsetLeft;
+// 	var y = event.clientY - canvas.offsetTop;
+// 	//var x = event.clientX -8;
+// 	//var y = event.clientY -8;//relative to the frame it's inside of
+// 	var coords = "X coords: " + x + " , Y coords: " + y;
+// 	document.getElementById("coordinates").innerHTML = coords;
+// }
 
 
 //later if want to link: src="./Clothes.js"
@@ -48,7 +48,7 @@ function dftNose(){ //just a triangle
     ctx.stroke(path);
 
 }
-dftNose();
+//dftNose();
 
 function roundNose(){
 	ctx.fillStyle = accentSkin;
@@ -58,7 +58,7 @@ function roundNose(){
 
 }
 
-//roundNose();
+roundNose();
 
 function dftMouth(){
 	ctx.fillStyle = accentSkin;
@@ -96,7 +96,7 @@ function closedLEye(){
 
 }
 
-//closedLEye();
+closedLEye();
 
 function closedREye(){ 
 	ctx.fillStyle = accentSkin;
@@ -104,7 +104,7 @@ function closedREye(){
 	ctx.arc(370, 77, 10, 45*Math.PI/180, 135 * Math.PI/180);
 	ctx.stroke();
 }
-//closedREye();
+closedREye();
 
 function openREye(){
 	ctx.fillStyle = accentSkin;
@@ -128,7 +128,7 @@ function openREye(){
 
 
 }
-openREye();
+//openREye();
 
 function openLEye(){
 	ctx.fillStyle = accentSkin;
@@ -151,7 +151,7 @@ function openLEye(){
 	ctx.fill();
 }
 
-openLEye();
+//openLEye();
 
 function clREyelash(){
 	ctx.fillStyle = accentSkin;
@@ -213,7 +213,7 @@ function openLEyelash(){
 	path.lineTo(360,77);
 	ctx.stroke(path);
 }
-openLEyelash();
+//openLEyelash();
 
 function openREyelash(){
 	ctx.fillStyle = accentSkin;
@@ -234,7 +234,7 @@ function openREyelash(){
 	path.lineTo(340,77);
 	ctx.stroke(path);
 }
-openREyelash();
+//openREyelash();
 
 //clLEyelash();
 
