@@ -139,6 +139,7 @@ var hair2 = document.getElementById("radio12");//blond
 var hair3 = document.getElementById("radio13");//light brown
 var hair4 = document.getElementById("radio14");//dark brown
 var hair5 = document.getElementById("radio15"); //gray
+var hair6 = document.getElementById("radio16"); //dark red
 
 var red = "#FF0000";
 var blue ="#0033CC";
@@ -153,6 +154,7 @@ var hairBlond = "#e6b800";
 var hairLtBrown = "#b38600";
 var hairdBrown = "#663300";
 var hairGray = "d1cdc8";
+var hairRed = "#AD4E44"
 
 var bottomColor;
 var hatColor;
