@@ -248,7 +248,7 @@ function check(){
 	else if(shirtBlue.checked == true){
 		shirtColor = blue;
 	}
-else{
+	else{
 		shirtColor = green;
 	}
 	
@@ -290,8 +290,9 @@ else{
 	else{
 		hairColor = hairdBrown;
 	}
+
+
 	if (h1.checked == true){
-		fillStyle = "#000000";
 		sHair();
 
 	}
@@ -312,22 +313,25 @@ else{
 	if(hatRed.checked == true){ //red orange yellow green blue purple pink
 		hatColor= red;
 	}
-	if(hatOrange.checked == true){
+	else if(hatOrange.checked == true){
 		hatColor = orange;
 	}
-	if(hatPurple.checked == true){
+	else if(hatPurple.checked == true){
 		hatColor = purple;
 	}
-	if(hatPink.checked == true){
+	else if(hatPink.checked == true){
 		hatColor = pink;
 	}
-	if(hatYellow.checked == true){
+	else if(hatYellow.checked == true){
 		hatColor = yellow;
 	}
-	if(hatGreen.checked == true){
+	else if(hatGreen.checked == true){
 		hatColor = green;
 	}
-	if(hatBlue.checked == true){
+	else if(hatBlue.checked == true){
+		hatColor = blue;
+	}
+	else{
 		hatColor = blue;
 	}
 
@@ -385,6 +389,10 @@ else{
 	else if(glassBlue.checked == true){
 		glassColor = blue;
 	}
+	else{
+		glassColor = purple;
+	}
+
 	if (g1.checked == true){
 		glasses1();
 	}
@@ -440,6 +448,10 @@ else{
 	else if(bottomBlue.checked == true){
 		bottomColor = blue;
 	}
+	else{
+		bottomColor = blue;
+	}
+
 	if(p1.checked == true){
 		pants1();
 		 
@@ -509,6 +521,10 @@ else{
 	else if(shoeBlue.checked == true){
 		shoeColor = blue;
 	}
+	else{
+		shoeColor = red;
+	}
+	
 	if (shoes1.checked == true){
 		shoes5();
 		 
