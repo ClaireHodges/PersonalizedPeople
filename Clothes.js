@@ -89,7 +89,7 @@ function curvedshirt(){
 
 }
 
-curvedshirt();
+//curvedshirt();
 
 function shortsleeve(){
 	var path = new Path2D;
@@ -106,7 +106,7 @@ function shortsleeve(){
 	ctx.fill(path);
 }
 
-shortsleeve();
+//shortsleeve();
 
 function longsleeve(){
 	var path = new Path2D;//add fill style
@@ -256,7 +256,7 @@ function shoes5(){
 	ctx.fill(path);
 	
 }
-shoes5();
+//shoes5();
 
 function shoes4(){
 	ctx.fillStyle = shoeColor;
@@ -777,6 +777,11 @@ function hat3(){
 
 //hat3();
 
+//preset stuff;
+ctx.fillStyle = "#000000";
+curveshort();
+pants1();
+shoes5();
 
 
 

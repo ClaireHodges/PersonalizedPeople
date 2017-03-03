@@ -27,7 +27,7 @@ function dftFace(){ //gray circle
 	//ctx.stroke();
 	//ctx.fillStyle = "black";
 }
-dftFace();
+//dftFace();
 
 function neck(){ //all necks are same except for color
 	ctx.fillStyle = skinColor;
@@ -37,7 +37,7 @@ function neck(){ //all necks are same except for color
 
 }
 
-neck();
+//neck();
 
 function dftNose(){ //just a triangle
 	ctx.fillStyle = accentSkin;
@@ -58,7 +58,7 @@ function roundNose(){
 
 }
 
-roundNose();
+//roundNose();
 
 function dftMouth(){
 	ctx.fillStyle = accentSkin;
@@ -86,7 +86,7 @@ function dftMouth(){
 
 }
 
-dftMouth();
+//dftMouth();
 
 function closedLEye(){ 
 	ctx.fillStyle = accentSkin;
@@ -96,7 +96,7 @@ function closedLEye(){
 
 }
 
-closedLEye();
+//closedLEye();
 
 function closedREye(){ 
 	ctx.fillStyle = accentSkin;
@@ -104,7 +104,7 @@ function closedREye(){
 	ctx.arc(370, 77, 10, 45*Math.PI/180, 135 * Math.PI/180);
 	ctx.stroke();
 }
-closedREye();
+//closedREye();
 
 function openREye(){
 	ctx.fillStyle = accentSkin;
@@ -309,7 +309,7 @@ function LArm(){
 	ctx.fill(path);
 }
 
-LArm();
+//LArm();
 
 
 function RArm(){
@@ -324,7 +324,7 @@ function RArm(){
 	
 }
 
-RArm();
+//RArm();
 
 function legs(){
 	ctx.fillStyle = skinColor;
@@ -341,7 +341,7 @@ function legs(){
 	ctx.fill(path);
 }
 
-legs();
+//legs();
 function RHand(){
 	ctx.fillStyle = skinColor;
 	ctx.beginPath();
@@ -349,7 +349,7 @@ function RHand(){
 	ctx.closePath();
 	ctx.fill();
 }
-RHand();
+//RHand();
 
 function LHand(){
 	ctx.fillStyle = skinColor;
@@ -358,7 +358,7 @@ function LHand(){
 	ctx.closePath();
 	ctx.fill();
 }
-LHand();
+//LHand();
 
 function body(){
 	LHand();
@@ -371,4 +371,9 @@ function body(){
 	legs();
 }
 
-
+ctx.fillStyle = "#000000";
+body();
+dftMouth();
+roundNose();
+closedLEye();
+closedREye();

@@ -171,7 +171,7 @@ var skinColor4 = "C68642";
 var skinColor5 = "#8D5524";
 var skinColor6 = "#573719";
 
-skinColor = "red";
+var skinColor;
 
 var accentSkin1 = "F1C27D";
 var accentSkin2 = "E0AC69";
@@ -524,7 +524,7 @@ function check(){
 	else{
 		shoeColor = red;
 	}
-	
+
 	if (shoes1.checked == true){
 		shoes5();
 		 
