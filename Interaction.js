@@ -148,12 +148,14 @@ var green = "#00FF00";
 var pink = "#FF6699";
 var purple = "#8F00B3";
 var orange ="#FF9933";
+var gray = "#d1cdc8";
+var black = "black";
 
 var hairBlack = "black";
 var hairBlond = "#e6b800";
 var hairLtBrown = "#b38600";
 var hairdBrown = "#663300";
-var hairGray = "d1cdc8";
+var hairGray = "#d1cdc8";
 var hairRed = "#AD4E44"
 
 var bottomColor;
@@ -164,19 +166,19 @@ var glassColor;
 var braceColor;
 var necklaceColor;
 var hairColor;
-var skinColor1 = "FFDBAC";
-var skinColor2 = "F1C27D";
-var skinColor3 = "E0AC69";
-var skinColor4 = "C68642";
+var skinColor1 = "#FFDBAC";
+var skinColor2 = "#F1C27D";
+var skinColor3 = "#E0AC69";
+var skinColor4 = "#C68642";
 var skinColor5 = "#8D5524";
 var skinColor6 = "#573719";
 
 var skinColor;
 
-var accentSkin1 = "F1C27D";
-var accentSkin2 = "E0AC69";
-var accentSkin3 = "C68642";
-var accentskin4 = "#8D5524";
+var accentSkin1 = "#F1C27D";
+var accentSkin2 = "#E0AC69";
+var accentSkin3 = "#C68642";
+var accentSkin4 = "#8D5524";
 var accentSkin5 = "black"; //this should be adjusted
 
 var accentSkin;
@@ -215,7 +217,7 @@ function check(){
 		none();
 	}
 	//background draws in front of person. REORDER ARRAY
-	body();
+	
 
 	//Scar
 	//can't see well with hair
@@ -225,6 +227,35 @@ function check(){
 	else if(no3.checked == true){
 		none();
 	}
+	if(skin6.checked == true){
+		skinColor = skinColor6;
+		accentSkin = accentSkin5;
+	}
+	else if(skin5.checked == true){
+		skinColor = skinColor5;
+		accentSkin = accentSkin5;
+	}
+	else if(skin4.checked == true){
+		skinColor = skinColor4;
+		accentSkin = accentSkin4;
+	}
+	else if(skin3.checked == true){
+		skinColor = skinColor3;
+		accentSkin = accentSkin3;
+	}
+	else if(skin2.checked == true){
+		skinColor = skinColor2;
+		accentSkin = accentSkin2;
+	}
+	else if(skin1.checked == true){
+		skinColor = skinColor1;
+		accentSkin = accentSkin1;
+	}
+	else{
+		skinColor = black;
+	}
+
+	body();
 
 	//Shirts
 	if(shirtRed.checked == true){ //red orange yellow green blue purple pink
@@ -249,7 +280,7 @@ function check(){
 		shirtColor = blue;
 	}
 	else{
-		shirtColor = green;
+		shirtColor = black;
 	}
 	
 	
@@ -288,7 +319,7 @@ function check(){
 		hairColor = hairGray;
 	}
 	else{
-		hairColor = hairdBrown;
+		hairColor = black;
 	}
 
 
@@ -332,7 +363,7 @@ function check(){
 		hatColor = blue;
 	}
 	else{
-		hatColor = blue;
+		hatColor = black;
 	}
 
 	if (hat20.checked == true){
@@ -390,7 +421,7 @@ function check(){
 		glassColor = blue;
 	}
 	else{
-		glassColor = purple;
+		glassColor = black;
 	}
 
 	if (g1.checked == true){
@@ -449,7 +480,7 @@ function check(){
 		bottomColor = blue;
 	}
 	else{
-		bottomColor = blue;
+		bottomColor = black;
 	}
 
 	if(p1.checked == true){
@@ -522,7 +553,7 @@ function check(){
 		shoeColor = blue;
 	}
 	else{
-		shoeColor = red;
+		shoeColor = black;
 	}
 
 	if (shoes1.checked == true){
