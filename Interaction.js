@@ -156,7 +156,7 @@ var hairBlond = "#e6b800";
 var hairLtBrown = "#b38600";
 var hairdBrown = "#663300";
 var hairGray = "#d1cdc8";
-var hairRed = "#AD4E44"
+var hairRed = "#AD4E44";
 
 var bottomColor;
 var hatColor;
@@ -307,7 +307,7 @@ function check(){
 		hairColor = black;
 	}
 	else if(hair2.checked == true){
-		hairColor = blond;
+		hairColor = hairBlond;
 	}
 	else if(hair3.checked == true){
 		hairColor = hairLtBrown;
@@ -316,7 +316,10 @@ function check(){
 		hairColor = hairdBrown;
 	}
 	else if(hair5.checked == true){
-		hairColor = hairGray;
+		hairColor = "#d1cdc8";
+	}
+	else if(hair6.checked == true){
+		hairColor = "#AD4E44"
 	}
 	else{
 		hairColor = black;
