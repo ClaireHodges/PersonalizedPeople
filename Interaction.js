@@ -175,14 +175,6 @@ var skinColor6 = "#573719";
 
 var skinColor;
 
-var accentSkin1 = "#F1C27D";
-var accentSkin2 = "#E0AC69";
-var accentSkin3 = "#C68642";
-var accentSkin4 = "#8D5524";
-var accentSkin5 = "black"; //this should be adjusted
-
-var accentSkin;
-
 function check(){
 	ctx.fillStyle = "#FFFFFF";
 	ctx.fillRect(0,0,750,500);
@@ -219,7 +211,33 @@ function check(){
 	//background draws in front of person. REORDER ARRAY
 	
 
-	//Scar
+
+
+	if(skin6.checked == true){
+		skinColor = skinColor6;
+	}
+	else if(skin5.checked == true){
+		skinColor = skinColor5;
+	}
+	else if(skin4.checked == true){
+		skinColor = skinColor4;
+	}
+	else if(skin3.checked == true){
+		skinColor = skinColor3;
+	}
+	else if(skin2.checked == true){
+		skinColor = skinColor2;
+	}
+	else if(skin1.checked == true){
+		skinColor = skinColor1;
+	}
+	else{
+		skinColor = black;
+	}
+
+	body();
+
+		//Scar
 	//can't see well with hair
 	if(scar1.checked == true){
 		hp();
@@ -227,35 +245,6 @@ function check(){
 	else if(no3.checked == true){
 		none();
 	}
-	if(skin6.checked == true){
-		skinColor = skinColor6;
-		accentSkin = accentSkin5;
-	}
-	else if(skin5.checked == true){
-		skinColor = skinColor5;
-		accentSkin = accentSkin5;
-	}
-	else if(skin4.checked == true){
-		skinColor = skinColor4;
-		accentSkin = accentSkin4;
-	}
-	else if(skin3.checked == true){
-		skinColor = skinColor3;
-		accentSkin = accentSkin3;
-	}
-	else if(skin2.checked == true){
-		skinColor = skinColor2;
-		accentSkin = accentSkin2;
-	}
-	else if(skin1.checked == true){
-		skinColor = skinColor1;
-		accentSkin = accentSkin1;
-	}
-	else{
-		skinColor = black;
-	}
-
-	body();
 
 	//Shirts
 	if(shirtRed.checked == true){ //red orange yellow green blue purple pink
@@ -486,6 +475,33 @@ function check(){
 		bottomColor = black;
 	}
 
+	//Shoe color- long skirt part
+	if(shoeRed.checked == true){ //red orange yellow green blue purple pink
+		shoeColor= red;
+	}
+	else if(shoeOrange.checked == true){
+		shoeColor = orange;
+	}
+	else if(shoePurple.checked == true){
+		shoeColor = purple;
+	}
+	else if(shoePink.checked == true){
+		shoeColor = pink;
+	}
+	else if(shoeYellow.checked == true){
+		shoeColor = yellow;
+	}
+	else if(shoeGreen.checked == true){
+		shoeColor = green;
+	}
+	else if(shoeBlue.checked == true){
+		shoeColor = blue;
+	}
+	else{
+		shoeColor = black;
+	}
+
+
 	if(p1.checked == true){
 		pants1();
 		 
@@ -520,6 +536,31 @@ function check(){
 	}
 
 	//Necklace
+	if(neckRed.checked == true){ //red orange yellow green blue purple pink
+		necklaceColor= red;
+	}
+	else if(neckOrange.checked == true){
+		necklaceColor = orange;
+	}
+	else if(neckPurple.checked == true){
+		necklaceColor = purple;
+	}
+	else if(neckPink.checked == true){
+		necklaceColor = pink;
+	}
+	else if(neckYellow.checked == true){
+		necklaceColor = yellow;
+	}
+	else if(neckGreen.checked == true){
+		necklaceColor = green;
+	}
+	else if(neckBlue.checked == true){
+		necklaceColor = blue;
+	}
+	else{
+		necklaceColor = black;
+	}
+
 	if (necklace1.checked == true){
 		necklace5();
 	}
@@ -534,30 +575,6 @@ function check(){
 	}
 
 	//Shoes
-	if(shoeRed.checked == true){ //red orange yellow green blue purple pink
-		shoeColor= red;
-	}
-	else if(shoeOrange.checked == true){
-		shoeColor = orange;
-	}
-	else if(shoePurple.checked == true){
-		shoeColor = purple;
-	}
-	else if(shoePink.checked == true){
-		shoeColor = pink;
-	}
-	else if(shoeYellow.checked == true){
-		shoeColor = yellow;
-	}
-	else if(shoeGreen.checked == true){
-		shoeColor = green;
-	}
-	else if(shoeBlue.checked == true){
-		shoeColor = blue;
-	}
-	else{
-		shoeColor = black;
-	}
 
 	if (shoes1.checked == true){
 		shoes5();
@@ -579,6 +596,31 @@ function check(){
 
 	
 	//Bracelet
+	if(braceRed.checked == true){ //red orange yellow green blue purple pink
+		braceColor= red;
+	}
+	else if(braceOrange.checked == true){
+		braceColor = orange;
+	}
+	else if(bracePurple.checked == true){
+		braceColor = purple;
+	}
+	else if(bracePink.checked == true){
+		braceColor = pink;
+	}
+	else if(braceYellow.checked == true){
+		braceColor = yellow;
+	}
+	else if(braceGreen.checked == true){
+		braceColor = green;
+	}
+	else if(braceBlue.checked == true){
+		braceColor = blue;
+	}
+	else{
+		braceColor = black;
+	}
+
 	if (bracelet1.checked == true){
 		bracelet4();
 	}

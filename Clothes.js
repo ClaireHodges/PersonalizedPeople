@@ -327,6 +327,7 @@ function boots(){
 function glasses1(){
 	var path = new Path2D;
 	ctx.fillStyle = glassColor;
+	ctx.strokeStyle = glassColor;
 	path.arc(330,85,10,0,2*Math.PI);
 	path.moveTo(380,85);
 	path.arc(370,85,10,0,2*Math.PI);
@@ -348,6 +349,7 @@ function glasses1(){
 function glasses2(){
 	var path = new Path2D;
 	ctx.fillStyle = glassColor;
+	ctx.strokeStyle = glassColor;
 	path.arc(330,80,15,0,1*Math.PI);
 	path.moveTo(385,80);
 	path.arc(370,80,15,0,1*Math.PI);
@@ -366,6 +368,7 @@ function glasses2(){
 function glasses3(){
 	var path = new Path2D;
 	ctx.fillStyle = glassColor;
+	ctx.strokeStyle = glassColor;
 	path.arc(330,80,15,0,1*Math.PI);
 	path.moveTo(385,80);
 	path.arc(370,80,15,0,1*Math.PI);
@@ -385,6 +388,7 @@ function glasses3(){
 function glasses4(){
 	var path = new Path2D;
 	ctx.fillStyle = glassColor;
+	ctx.strokeStyle = glassColor;
 	path.arc(330,85,15,0,2*Math.PI);
 	path.moveTo(385,85);
 	path.arc(370,85,15,0,2*Math.PI);
@@ -660,7 +664,7 @@ function lHair(){
 
 //lHair();
 function baldoHair(){
-	ctx.fillStyle = hairColor; 
+	ctx.strokeStyle = hairColor; 
 	var path = new Path2D();
 	path.moveTo(332, 51);
 	path.lineTo(327, 42);

@@ -40,7 +40,7 @@ function neck(){ //all necks are same except for color
 //neck();
 
 function dftNose(){ //just a triangle
-	ctx.fillStyle = accentSkin;
+	ctx.strokeStyle = black;
 	var path =new Path2D();
     path.moveTo(350,82);
     path.lineTo(341,100);
@@ -51,7 +51,7 @@ function dftNose(){ //just a triangle
 //dftNose();
 
 function roundNose(){
-	ctx.fillStyle = accentSkin;
+	ctx.strokeStyle = black;
 	ctx.beginPath();
 	ctx.arc(350, 88, 7, 45*Math.PI/180, 135 * Math.PI/180);
 	ctx.stroke();
@@ -61,7 +61,7 @@ function roundNose(){
 //roundNose();
 
 function dftMouth(){
-	ctx.fillStyle = accentSkin;
+	ctx.strokeStyle = black;
 	var path =new Path2D();
 	//right side
     path.moveTo(350,107.5);
@@ -89,7 +89,7 @@ function dftMouth(){
 //dftMouth();
 
 function closedLEye(){ 
-	ctx.fillStyle = accentSkin;
+	ctx.strokeStyle = black;
 	ctx.beginPath();
 	ctx.arc(330, 77, 10, 45 *Math.PI/180, 135 * Math.PI/180);
 	ctx.stroke();
@@ -99,7 +99,7 @@ function closedLEye(){
 //closedLEye();
 
 function closedREye(){ 
-	ctx.fillStyle = accentSkin;
+	ctx.strokeStyle = black;
 	ctx.beginPath();
 	ctx.arc(370, 77, 10, 45*Math.PI/180, 135 * Math.PI/180);
 	ctx.stroke();
@@ -107,7 +107,7 @@ function closedREye(){
 //closedREye();
 
 function openREye(){
-	ctx.fillStyle = accentSkin;
+	ctx.strokeStyle = black;
 	//lower eye
 	ctx.beginPath();
 	ctx.arc(370, 77, 10, 30*Math.PI/180, 135 * Math.PI/155);
@@ -131,7 +131,7 @@ function openREye(){
 //openREye();
 
 function openLEye(){
-	ctx.fillStyle = accentSkin;
+	ctx.strokeStyle = black;
 	//lower eye
 	ctx.beginPath();
 	ctx.arc(330, 77, 10, 30*Math.PI/180, 135 * Math.PI/155);
@@ -154,7 +154,7 @@ function openLEye(){
 //openLEye();
 
 function clREyelash(){
-	ctx.fillStyle = accentSkin;
+	ctx.strokeStyle = black;
 	var path = new Path2D();
 	 path.moveTo(324,84);
 	 path.lineTo(321,87);
@@ -175,7 +175,7 @@ function clREyelash(){
 }
 //clREyelash();
 function clLEyelash(){
-	ctx.fillStyle = accentSkin;
+	ctx.strokeStyle = black;
 	var path = new Path2D();
 	path.moveTo(377,84);
 	path.lineTo(380,87);
@@ -195,7 +195,7 @@ function clLEyelash(){
 }
 
 function openLEyelash(){
-	ctx.fillStyle = accentSkin;
+	ctx.strokeStyle = black;
 	var path = new Path2D();
 	path.moveTo(377,80);
 	path.lineTo(380,77);
@@ -216,7 +216,7 @@ function openLEyelash(){
 //openLEyelash();
 
 function openREyelash(){
-	ctx.fillStyle = accentSkin;
+	ctx.strokeStyle = black;
 	var path = new Path2D();
 	path.moveTo(323,80);
 	path.lineTo(320,77);

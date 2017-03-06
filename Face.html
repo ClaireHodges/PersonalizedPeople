@@ -463,7 +463,8 @@ ul.tab li a:focus, .active {
 
 <div id="instructions">
 	<h2>Instructions</h2>
-		<ol><li>Choose one option from each of the buttons on the side.</li>
+		<ol><li>Name your person below.</li>
+		<li>Choose one option from each of the buttons on the side.</li>
 		<li>Click the "Update Person" button.</li>
 		<li>The avatar will redraw itself into your choices.</li>
 		<li>Make any changes to your previous choises if you want to, clicking "Update Person" after you change your choices.</li>
@@ -471,10 +472,22 @@ ul.tab li a:focus, .active {
 		</ol>
 
 <!--<a href="#" class="button" id="btn-download" download="my-file-name.png">Download</a>-->
+
+<input type="text" id="Person Name" value="Person's Name">
+
+<button onclick="Name()">Name Your Person!</button>
+
+<p id="Hi"></p>
 </div>
 
 
 <script>
+function Name() {
+    var name = document.getElementById("Person Name").value;
+    document.getElementById("Hi").innerHTML = "Hi " + name + "!" ;
+    document.getElementById("title").innerHTML = "Personalize " + name;
+}
+
 function openCity(evt, tabName) {
     var i, tabcontent, tablinks;
     tabcontent = document.getElementsByClassName("tabcontent");
